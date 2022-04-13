@@ -1,0 +1,9 @@
+<svg id="eye_twotone" data-name="eye/twotone" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <g id="vuesax_twotone_eye" data-name="vuesax/twotone/eye">
+    <g id="eye">
+      <path id="Vector" d="M59.667,29.833A29.833,29.833,0,1,1,29.833,0,29.8,29.8,0,0,1,59.667,29.833Z" transform="translate(70.167 70.167)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" opacity="0.4"/>
+      <path id="Vector-2" data-name="Vector" d="M81.542,137.917c29.417,0,56.833-17.333,75.917-47.333,7.5-11.75,7.5-31.5,0-43.25C138.375,17.333,110.958,0,81.542,0S24.708,17.333,5.625,47.333c-7.5,11.75-7.5,31.5,0,43.25C24.708,120.583,52.125,137.917,81.542,137.917Z" transform="translate(18.458 31)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+      <path id="Vector-3" data-name="Vector" d="M0,0H200V200H0Z" transform="translate(200 200) rotate(180)" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>
