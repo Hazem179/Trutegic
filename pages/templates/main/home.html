@@ -1,0 +1,169 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+  <section id="hero" class="hero-home">
+    <div class="container d-flex align-items-center flex-column">
+      <div class="heading">
+        <h2 class="uppercase">
+          WE HELP YOUR BUSINESS SUCCEED
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper, neque ut
+          viverra mollis, leo lacus gravida ante, porttitor lobortis nulla nulla volutpat neque.
+        </p>
+        <div class="buttons">
+          <a class="uppercase primary-btn" href="#">freE CONSULTATION</a>
+          <a class="uppercase whitebrder-btn" href="#contact">contact us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+{% include 'components/clients_component.html' %}
+    <section id="features" class="features">
+      <div class="container">
+        <div class="title">
+          <h3 class="capital">
+            Our features
+          </h3>
+        </div>
+        <p class="center-p">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper, neque ut
+          viverra mollis, leo lacus gravida ante, porttitor
+        </p>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-11 m-auto" data-aos="fade-left" data-aos-duration="1000">
+            <div class="feature-box">
+              <div class="feature-icon">
+                <img src="{% static 'img/icon-wallet-check.svg' %}">
+              </div>
+              <h6>
+                real value
+              </h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper, neque
+                ut
+                viverra mollis, leo lacus gravida ante, porttitor
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-11 m-auto" data-aos="fade-left" data-aos-duration="1500">
+            <div class="feature-box">
+              <div class="feature-icon">
+                <img src="{% static 'img/icon-global.svg' %}">
+              </div>
+              <h6>
+                Global Expansion
+              </h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper, neque
+                ut
+                viverra mollis, leo lacus gravida ante, porttitor
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-11 m-auto" data-aos="fade-left" data-aos-duration="2000">
+            <div class="feature-box">
+              <div class="feature-icon">
+                <img src="{% static 'img/icon-activity.svg' %}">
+              </div>
+              <h6>
+                Business Development
+              </h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper, neque
+                ut
+                viverra mollis, leo lacus gravida ante, porttitor
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div class="bg">
+              <img src="{% static 'img/logo.png' %}" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="h3">Who we are?</h3>
+            <p class="left-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper, neque
+              ut viverra mollis, leo lacus gravida ante, porttitorLorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Praesent non vehicula elit. Nulla semper, neque ut viverra mollis, leo lacus gravida ante, porttitor
+            </p>
+            <a class="uppercase secondary-btn" href="#">LEarn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+{% include 'components/services_component.html' %}
+
+    <section id="team" class="team">
+      <div class="container">
+        <h3 class="h3 text-center">
+          Our Team
+        </h3>
+        <p class="center-p">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper, neque ut
+          viverra mollis, leo lacus gravida ante, porttitor
+        </p>
+        <div class="owl-carousel team-carousel">
+          <div class="team-box">
+            <img src="{% static 'img/team-2.jpg' %}" class="img-fluid">
+            <h6>
+              Ahmed Khaled
+            </h6>
+            <p>CEO</p>
+          </div>
+          <div class="team-box">
+            <img src="{% static 'img/team-2.jpg' %}" class="img-fluid">
+            <h6>
+              Ahmed Khaled
+            </h6>
+            <p>CEO</p>
+          </div>
+          <div class="team-box">
+            <img src="{% static 'img/team-2.jpg' %}" class="img-fluid">
+            <h6>
+              Ahmed Khaled
+            </h6>
+            <p>CEO</p>
+          </div>
+          <div class="team-box">
+            <img src="{% static 'img/team-2.jpg' %}" class="img-fluid">
+            <h6>
+              Ahmed Khaled
+            </h6>
+            <p>CEO</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="consultation">
+      <div class="consultation-text">
+        <h3>
+          Struggling ? Get A Free Consultation Now
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper, neque ut
+          viverra mollis, leo lacus gravida ante, porttitor
+        </p>
+        <div class="buttons">
+          <a class="uppercase primary-btn" href="#">GET IT NOW</a>
+          <a class="uppercase whitebrder-btn" href="#contact">LEARN MORE</a>
+        </div>
+      </div>
+    </section>
+      {% include 'components/contact_form.html' %}
+  </main>
+{% endblock %}

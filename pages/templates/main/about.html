@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section id="hero" class="hero-about">
+        <div class="container d-flex align-items-center flex-column">
+            <div class="heading">
+                <h2 class="uppercase">
+                    WE HELP YOUR BUSINESS SUCCEED
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper,
+                    neque ut
+                    viverra mollis, leo lacus gravida ante, porttitor lobortis nulla nulla volutpat neque.
+                </p>
+                <div class="buttons">
+                    <a class="uppercase primary-btn" href="#">freE CONSULTATION</a>
+                    <a class="uppercase whitebrder-btn" href="contact.html">contact us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+{% include 'components/clients_component.html' %}
+        <div class="about-page">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-7 col-sm-8">
+                        <h3 class="h3" data-aos="zoom-in-down" data-aos-duration="1500">about us</h3>
+                        <p class="left-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla
+                            semper, neque
+                            ut viverra mollis, leo lacus gravida ante, porttitorLorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit. Praesent non vehicula elit. Nulla semper, neque ut viverra mollis, leo lacus gravida
+                            ante, porttitor
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-sm-2">
+                        <img src="{% static 'img/featured-products.png' %}" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="vision">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-7 col-sm-8">
+                        <h3 class="h3">Our Vision</h3>
+                        <p class="left-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla
+                            semper, neque ut viverra mollis, leo lacus gravida ante, porttitor
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-sm-4" data-aos="fade-up">
+                        <div class="bg">
+                            <img src="{% static 'img/eye.svg' %}" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="message">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-4 col-sm-4 order-2 order-sm-1" data-aos="fade-down">
+                        <div class="bg">
+                            <img src="{% static 'img/send.svg' %}" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-7 order-1 order-sm-2">
+                        <h3 class="h3">Our Message</h3>
+                        <p class="left-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla
+                            semper, neque ut viverra mollis, leo lacus gravida ante, porttitor
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mission">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-7 col-sm-8">
+                        <h3 class="h3">Our Mission</h3>
+                        <p class="left-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla
+                            semper, neque ut viverra mollis, leo lacus gravida ante, porttitor
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-sm-4" data-aos="fade-up">
+                        <div class="bg">
+                            <img src="{% static 'img/target.svg' %}" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+{% endblock %}

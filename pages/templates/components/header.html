@@ -1,0 +1,26 @@
+
+{% load static %}
+
+  <header class="fixed-top d-flex align-items-center header-transparent">
+    <div id="header" class="container-fluid d-flex align-items-center justify-content-between p-0">
+      <div class="logo">
+        <a href="{% url 'main:home' %}"><img src="{% static 'img/logo-white.svg' %}" class="img-fluid"></a>
+      </div>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+
+          <li {% if section == "home" %} class="active"{% endif %}><a href="{% url 'main:home' %}">Home</a></li>
+          <li {% if section == "about" %} class="active"{% endif %}><a href="{% url 'main:about' %}">About Us</a></li>
+          <li {% if section == "service" %} class="active"{% endif %} ><a href="{% url 'main:services' %}">Services</a></li>
+          <li {% if section == "entrepreneurship" %} class="active"{% endif %}><a href="{% url 'main:entrepreneurship' %}">Entrepreneurship</a></li>
+          <li {% if section == "team" %} class="active"{% endif %}><a href="{% url 'main:team' %}">Our Team</a></li>
+          <li {% if section == "contact" %} class="active"{% endif %}><a href="{% url 'main:contact' %}">contact us</a></li>
+          <li class="d-block d-lg-none"><a class="uppercase primary-btn" href="#">freE CONSULTATION</a></li>
+        </ul>
+      </nav>
+      <div class="d-none d-lg-block">
+        <a class="uppercase primary-btn" href="#">freE CONSULTATION</a>
+      </div>
+    </div>
+  </header>
+

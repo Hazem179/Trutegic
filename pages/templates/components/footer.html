@@ -1,0 +1,70 @@
+{% load static %}
+    <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="footer-info">
+              <a href="{% url 'main:home' %}">
+                <img class="img-fluid" src="{% static 'img/logo-white.svg' %}">
+              </a>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper, neque
+                ut viverra mollis, leo lacus gravida ante, porttitor
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12 footer-links">
+            <h6>Quick Links</h6>
+        <ul>
+
+          <li {% if section == "home" %} class="active"{% endif %}><a href="{% url 'main:home' %}">Home</a></li>
+          <li {% if section == "about" %} class="active"{% endif %}><a href="{% url 'main:about' %}">About Us</a></li>
+          <li {% if section == "service" %} class="active"{% endif %} ><a href="{% url 'main:services' %}">Services</a></li>
+          <li {% if section == "entrepreneurship" %} class="active"{% endif %}><a href="{% url 'main:entrepreneurship' %}">Entrepreneurship</a></li>
+          <li {% if section == "team" %} class="active"{% endif %}><a href="{% url 'main:team' %}">Our Team</a></li>
+          <li {% if section == "contact" %} class="active"{% endif %}><a href="{% url 'main:contact' %}">contact us</a></li>
+          <li class="d-block d-lg-none"><a class="uppercase primary-btn" href="#">freE CONSULTATION</a></li>
+        </ul>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12 footer-links">
+            <h6>find us</h6>
+            <div class="info">
+              <img src="{% static 'img/icon-white-pin.svg' %}">
+              <a href="#">
+                Egypt , Mansoura , Ahmed Maher Street
+              </a>
+            </div>
+            <div class="info">
+              <img src="{% static 'img/icon-white-phone.svg' %}">
+              <a href="tel:+201021489394">
+                +201021489394
+              </a>
+            </div>
+            <div class="info">
+              <img src="{% static 'img/icon-white-whatsapp.svg' %}">
+              <a href="https://wa.me/+966538111700" target="_blank">
+                +966538111700
+              </a>
+            </div>
+            <div class="info">
+              <img src="{% static 'img/icon-white-sms.svg' %}">
+              <a href="mailto:Info@Example.Com" target="_blank">
+                Info@Example.Com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-100">
+      <div class="copyright">
+        <p>
+          All Right Reserved &copy; <a href="{% url 'main:home' %}">Trustegic</a> 2022
+        </p>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="back-to-top"><i class="fal fa-long-arrow-up"></i></a>
+
+

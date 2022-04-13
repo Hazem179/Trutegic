@@ -1,0 +1,10 @@
+<svg id="global" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <path id="Vector" d="M40,20A20,20,0,1,1,20,0,20,20,0,0,1,40,20Z" transform="translate(4 4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  <g id="Group_722" data-name="Group 722" transform="translate(6 6)" opacity="0.4">
+    <path id="Vector-2" data-name="Vector" d="M.925,0h2a56.847,56.847,0,0,0,0,36h-2" transform="translate(9.074)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <path id="Vector-3" data-name="Vector" d="M0,0A56.847,56.847,0,0,1,0,36" transform="translate(24)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <path id="Vector-4" data-name="Vector" d="M0,2V0A56.847,56.847,0,0,0,36,0V2" transform="translate(0 24)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <path id="Vector-5" data-name="Vector" d="M0,2.925a56.847,56.847,0,0,1,36,0" transform="translate(0 9.075)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  </g>
+  <path id="Vector-6" data-name="Vector" d="M0,0H48V48H0Z" transform="translate(48 48) rotate(180)" fill="none" opacity="0"/>
+</svg>
