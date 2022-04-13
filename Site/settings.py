@@ -19,8 +19,7 @@ import os.path
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR,'media/')
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -30,11 +29,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media/')
 SECRET_KEY = 'django-insecure-b)2@p%$4p8^47*u8s&4$216(*0*4l%q6_j(-3#%mr7_cyyaiuw'
 GOOGLE_RECAPTCHA_SECRET_KEY = '6Lf9n2gfAAAAAEzjdsU08KieZDG4R7I3Xytatame'
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'www.trustegiceg.com']
 
 
+STATIC_ROOT = 'static'
 # Application definition
 
 INSTALLED_APPS = [
