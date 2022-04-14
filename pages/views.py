@@ -1,10 +1,10 @@
 from django.shortcuts import render, redirect
 from .models import Customer
-from .decorators import check_recaptcha
+
 
 
 # Create your views here.
-@check_recaptcha
+
 def home(request):
     if request.method =='POST':
         data = request.POST
@@ -25,7 +25,7 @@ def home(request):
 def about(request):
     return render(request, 'main/about.html',{'section':'about'})
 
-@check_recaptcha
+
 def contact(request):
     if request.method =='POST':
         data = request.POST

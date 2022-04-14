@@ -29,9 +29,14 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media/')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-b)2@p%$4p8^47*u8s&4$216(*0*4l%q6_j(-3#%mr7_cyyaiuw'
-GOOGLE_RECAPTCHA_SECRET_KEY = '6Lf9n2gfAAAAAEzjdsU08KieZDG4R7I3Xytatame'
+
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+env = 'prod'
+
+if env == 'prod':
+    DEBUG = False
+else:
+    DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'www.trustegiceg.com']
 
