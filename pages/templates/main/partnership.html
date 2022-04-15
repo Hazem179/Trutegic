@@ -1,0 +1,215 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section id="hero" class="hero-partnership" style="background-image: linear-gradient(to bottom, #000000C4 0%, #0000000D 100%), url('{% static 'img/bg-partnership.svg' %}');">
+        <div class="container d-flex align-items-center flex-column">
+            <div class="heading">
+                <h2>
+                    <span>
+                        Ever Heard Of Tech Partnership !
+                    </span>
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper,
+                    neque ut viverra mollis, leo lacus gravida ante, porttitor lobortis nulla nulla volutpat neque.
+                </p>
+                <div class="buttons">
+                    <a class="uppercase whitebrder-btn" href="#">GET IT NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counts  -->
+    <div class="floating">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-lg-auto col-md-3 col-sm-4 col-6">
+                    <div class="count">
+                        <i class="fal fa-plus" data-aos="fade-down"></i>
+                        <div class="d-flex flex-column">
+                            <span data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-duration="2"
+                                class="counter purecounter"></span>
+                            <p>
+                                Consultation
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-auto col-md-3 col-sm-4 col-6">
+                    <div class="count">
+                        <i class="fal fa-plus" data-aos="fade-down"></i>
+                        <div class="d-flex flex-column">
+                            <span data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-duration="2"
+                                class="counter purecounter"></span>
+                            <p>
+                                Consultation
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-auto col-md-3 col-sm-4 col-6">
+                    <div class="count">
+                        <i class="fal fa-plus" data-aos="fade-down"></i>
+                        <div class="d-flex flex-column">
+                            <span data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-duration="2"
+                                class="counter purecounter"></span>
+                            <p>
+                                Consultation
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-auto col-md-3 col-sm-4 col-6">
+                    <div class="count">
+                        <i class="fal fa-plus" data-aos="fade-down"></i>
+                        <div class="d-flex flex-column">
+                            <span data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-duration="2"
+                                class="counter purecounter"></span>
+                            <p>
+                                Consultation
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-auto col-md-3 col-sm-4 col-6">
+                    <div class="count">
+                        <i class="fal fa-plus" data-aos="fade-down"></i>
+                        <div class="d-flex flex-column">
+                            <span data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-duration="2"
+                                class="counter purecounter"></span>
+                            <p>
+                                Consultation
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <main>
+{% include 'components/clients_component.html' %}
+        <section class="report">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="border-title">
+                            <h5 class="h5">New Business Model!</h5>
+                        </div>
+                        <div class="border-title">
+                            <h5 class="h5">And We Are Up To Your New One.</h5>
+                        </div>
+                        <p class="left-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla
+                            semper, neque ut viverra mollis, leo lacus gravida ante, porttitor </p>
+
+                        <a class="uppercase secondary-btn" href="#">LET'S TALK</a>
+                    </div>
+                    <div class="col-md-4 text-right text-sm-center">
+                        <img src="{% static 'img/Report.svg' %}" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="steps">
+            <div class="container">
+                <div class="title">
+                    <h3 class="capital">
+                        Our Partners
+                    </h3>
+                </div>
+                <p class="center-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper,
+                    neque ut
+                    viverra mollis, leo lacus gravida ante, porttitor
+                </p>
+                <!-- STEP 1 -->
+                <div class="row align-items-center mb-3 justify-content-between">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="step">
+                            <span class="lg-number">1</span>
+                            <div class="d-flex flex-column">
+                                <div class="border-title">
+                                    <h5 class="h5">We Help You Setup Everything</h5>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit.
+                                    Nulla semper, neque ut viverra mollis, leo lacus gravida ante, porttitor
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-4 text-center">
+                        <img class="img-fluid" src="{% static 'img/Integration.svg' %}">
+                    </div>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="row align-items-center justify-content-between mb-3">
+                    <div class="col-lg-5 col-md-4 text-center order-md-1 order-2">
+                        <img class="img-fluid" src="{% static 'img/Dashboard.svg' %}">
+                    </div>
+                    <div class="col-lg-6 col-md-8 order-md-2 order-1">
+                        <div class="step">
+                            <span class="lg-number">2</span>
+                            <div class="d-flex flex-column">
+                                <div class="border-title">
+                                    <h5 class="h5">We Implement Every Thing !</h5>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit.
+                                    Nulla semper, neque ut viverra mollis, leo lacus gravida ante, porttitor
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="step">
+                            <span class="lg-number">3</span>
+                            <div class="d-flex flex-column">
+                                <div class="border-title">
+                                    <h5 class="h5">We Help You Setup Everything</h5>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit.
+                                    Nulla semper, neque ut viverra mollis, leo lacus gravida ante, porttitor
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-4 text-center">
+                        <img class="img-fluid" src="{% static 'img/Lead.svg' %}">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="consultation">
+            <div class="consultation-text">
+                <h3>
+                    How Much does It Cost
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper, neque ut viverra mollis, leo lacus gravida ante, porttitor
+                </p>
+                <div class="buttons">
+                    <a class="uppercase primary-btn" href="#">call us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

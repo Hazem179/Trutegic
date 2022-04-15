@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1921" height="955" viewBox="0 0 1921 955">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="0.023" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#353535"/>
+      <stop offset="0.202" stop-color="#1f1f1f"/>
+      <stop offset="0.445" stop-color="#0e0e0e"/>
+      <stop offset="0.703" stop-color="#030303"/>
+      <stop offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_56367" data-name="Group 56367" transform="translate(0.5 0.5)">
+    <rect id="Rectangle_14173" data-name="Rectangle 14173" width="1920" height="954" rx="4" stroke="rgba(0,0,0,0)" stroke-width="1" fill="url(#linear-gradient)"/>
+    <g id="chart-square_twotone" data-name="chart-square/twotone" transform="translate(349.361 332.079)">
+      <g id="vuesax_twotone_chart-square" data-name="vuesax/twotone/chart-square">
+        <g id="chart-square">
+          <g id="Group_111" data-name="Group 111" transform="translate(23.533 26.016)" opacity="0.4">
+            <path id="Vector" d="M13.75,1.554,5.12,1.527a2.984,2.984,0,0,0-1.43.355,3.373,3.373,0,0,0-1.113.979,4.3,4.3,0,0,0-.687,1.458,5.3,5.3,0,0,0-.149,1.789l1.7,20.7,12.405-.252-2.093-25Z" transform="translate(0 18.02)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+            <path id="Vector-2" data-name="Vector" d="M9.851,1.681,5,1.584a2.861,2.861,0,0,0-1.395.325,3.208,3.208,0,0,0-1.085.943,4.143,4.143,0,0,0-.667,1.42,5.212,5.212,0,0,0-.142,1.755L4.938,44.537l12.124-.245L13.81,6.219a5.816,5.816,0,0,0-.426-1.745A5.311,5.311,0,0,0,12.5,3.041a4.221,4.221,0,0,0-1.217-.98A3.221,3.221,0,0,0,9.851,1.681Z" transform="translate(10.871)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+            <path id="Vector-3" data-name="Vector" d="M9.617,1.475,1.312,1.5,2.848,19.484l11.85-.24L13.537,5.91a5.859,5.859,0,0,0-.445-1.73,5.289,5.289,0,0,0-.884-1.41,4.107,4.107,0,0,0-1.2-.949A3.034,3.034,0,0,0,9.617,1.475Z" transform="translate(25.115 24.807)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+          <path id="Vector-4" data-name="Vector" d="M31.25,82.366l19.215-.723a27.552,27.552,0,0,0,9.843-1.911,13.939,13.939,0,0,0,6.232-5.057,20.122,20.122,0,0,0,3-8.545,54.786,54.786,0,0,0,.078-12.406L67.564,30.652A56.828,56.828,0,0,0,65.3,18.369,23.946,23.946,0,0,0,60.83,9.957,17.659,17.659,0,0,0,53.783,5a30.3,30.3,0,0,0-10.064-1.87L24.6,2.421A29.47,29.47,0,0,0,14.229,3.592,13.925,13.925,0,0,0,7.4,8.3a19.132,19.132,0,0,0-3.452,8.657,53.409,53.409,0,0,0-.282,12.982l1.959,24.5A56.984,56.984,0,0,0,8,67.562a23.486,23.486,0,0,0,4.891,8.8,17.476,17.476,0,0,0,7.68,4.8A31.194,31.194,0,0,0,31.25,82.366Z" transform="translate(6.064 6.805)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          <path id="Vector-5" data-name="Vector" d="M0,0,76.546,3.392l8.237,91.756L7.792,98.632Z" fill="none" opacity="0"/>
+        </g>
+      </g>
+    </g>
+    <g id="code-circle_twotone" data-name="code-circle/twotone" transform="translate(1442.305 570.649)">
+      <g id="vuesax_twotone_code-circle" data-name="vuesax/twotone/code-circle">
+        <g id="code-circle">
+          <path id="Vector-6" data-name="Vector" d="M7.608,2.08,2.335,9.852,9.462,17.6" transform="translate(21.533 39.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity="0.4"/>
+          <path id="Vector-7" data-name="Vector" d="M1.977,2.189l7.5,7.961L3.8,18.086" transform="translate(52.741 39.202)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity="0.4"/>
+          <path id="Vector-8" data-name="Vector" d="M69.982,42.4a45,45,0,0,1-.921,15.672A35.006,35.006,0,0,1,63.3,70.609a27.037,27.037,0,0,1-9.508,8.137A24.834,24.834,0,0,1,41.6,81.364a29.589,29.589,0,0,1-12.61-3.454A39.067,39.067,0,0,1,18.207,69.44a47.808,47.808,0,0,1-7.985-12.215A50.625,50.625,0,0,1,6.033,42.4a45.607,45.607,0,0,1,.544-14.914,36.182,36.182,0,0,1,5.036-12.416,27.9,27.9,0,0,1,8.844-8.68A24.7,24.7,0,0,1,32.417,2.83,28.561,28.561,0,0,1,45.4,5.526a37.974,37.974,0,0,1,11.512,8.345,47.4,47.4,0,0,1,8.652,12.758A50.573,50.573,0,0,1,69.982,42.4Z" transform="translate(5.65 6.955)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          <path id="Vector-9" data-name="Vector" d="M8.185,1.964l-4.249,18.3" transform="translate(36.645 38.195)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity="0.4"/>
+          <path id="Vector-10" data-name="Vector" d="M0,3.47,77.073,0,87.757,97.775,11.294,94.43Z" fill="none" opacity="0"/>
+        </g>
+      </g>
+    </g>
+    <g id="Layer_2" data-name="Layer 2" transform="translate(862 254)">
+      <g id="flash">
+        <rect id="Rectangle_14174" data-name="Rectangle 14174" width="76" height="76" fill="#fff" stroke="#0d0d0d" stroke-width="3" opacity="0"/>
+        <path id="Path_111715" data-name="Path 111715" d="M26.518,70.667a3.157,3.157,0,0,1-3.135-3.515L25.822,44.7H7.17a3.167,3.167,0,0,1-2.628-4.94L29.527,2.394A3.152,3.152,0,0,1,35.29,4.357l-2.438,22.61H51.5a3.167,3.167,0,0,1,2.628,4.94L29.147,69.274a3.167,3.167,0,0,1-2.628,1.393Zm-13.427-32.3H29.337a3.159,3.159,0,0,1,3.135,3.515L31.047,55.024,45.582,33.3H29.337a3.167,3.167,0,0,1-3.167-3.515l1.425-13.142Z" transform="translate(8.663 2.166)" fill="#fff" stroke="#0d0d0d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+    </g>
+    <g id="path-square_twotone" data-name="path-square/twotone" transform="translate(1238.708 235.85)">
+      <g id="vuesax_twotone_path-square" data-name="vuesax/twotone/path-square">
+        <g id="path-square">
+          <g id="Group_725" data-name="Group 725" transform="translate(26.435 25.578)" opacity="0.4">
+            <path id="Vector-11" data-name="Vector" d="M21.412,11.2l-7.7-7.148A7.705,7.705,0,0,0,11.469,2.57a4.983,4.983,0,0,0-2.19-.414,3.6,3.6,0,0,0-1.886.635,3.954,3.954,0,0,0-1.33,1.662L3.246,10.79,16.8,23.42l5.38-3.981a3.634,3.634,0,0,0,1.263-1.653,4.758,4.758,0,0,0,.271-2.161,6.457,6.457,0,0,0-.689-2.314A7.461,7.461,0,0,0,21.412,11.2Z" transform="translate(16.357)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+            <path id="Vector-12" data-name="Vector" d="M19.6,2.622l-8.563-.474a10.67,10.67,0,0,0-2.972.167A3.622,3.622,0,0,0,6.2,3.309a3.969,3.969,0,0,0-.944,1.95A12.467,12.467,0,0,0,5.06,8.3l.678,19.128a7.4,7.4,0,0,0,.614,2.755,6.523,6.523,0,0,0,1.5,2.128,5.936,5.936,0,0,0,4.763,1.584L30.2,31.843a10.265,10.265,0,0,0,2.786-.65,3.7,3.7,0,0,0,1.691-1.31,4.117,4.117,0,0,0,.636-2.174,12.488,12.488,0,0,0-.378-3.244l-1.744-9.174" transform="translate(0 8.168)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+            <path id="Vector-13" data-name="Vector" d="M3.846,9.614l5.47-6.9" transform="translate(4.839 29.782)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          </g>
+          <path id="Vector-14" data-name="Vector" d="M37.287,79.238l21.181.508a36.886,36.886,0,0,0,11.35-1.2,14.907,14.907,0,0,0,7.323-4.518,16.4,16.4,0,0,0,3.489-8.239,44.261,44.261,0,0,0-.118-12.363L77.543,29.941a50.1,50.1,0,0,0-3.07-12.67A23.472,23.472,0,0,0,68.75,8.706a21.128,21.128,0,0,0-8.715-4.738A40.219,40.219,0,0,0,48.056,2.7l-21.593.535A34.494,34.494,0,0,0,15.4,5.03,14.485,14.485,0,0,0,8.545,9.951a17.181,17.181,0,0,0-3.013,8.372,46.34,46.34,0,0,0,.487,12.143L9.4,52.908A49.43,49.43,0,0,0,12.509,64.77,23.464,23.464,0,0,0,17.9,72.836a21.051,21.051,0,0,0,8.1,4.7A39.374,39.374,0,0,0,37.287,79.238Z" transform="translate(6.011 6.228)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="Vector-15" data-name="Vector" d="M0,2.583,86.6,0,98.292,94.4,13.675,91.974Z" fill="none" opacity="0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Customer
+from dashboard.models import Team
+
 
 
 
@@ -18,8 +20,6 @@ def home(request):
         return  redirect('main:home')
     else:
         return render(request, 'main/home.html', {'section': 'home'})
-
-    return render(request, 'main/home.html',{'section':'home'})
 
 
 def about(request):
@@ -42,8 +42,8 @@ def contact(request):
     return render(request, 'main/contact.html',{'section':'contact'})
 
 
-def entrepreneurship(request):
-    return render(request, 'main/entrepreneurship.html',{'section':'entrepreneurship'})
+def partnership(request):
+    return render(request, 'main/partnership.html',{'section':'partnership'})
 
 
 def services(request):
@@ -51,4 +51,11 @@ def services(request):
 
 
 def team(request):
+    # team = Team.objects.all()
+
     return render(request, 'main/team.html',{'section':'team'})
+
+
+
+def consultation(request):
+    return render(request, 'main/consultation.html',{'section':'consultation'})

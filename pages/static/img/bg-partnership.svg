@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1921" height="1080" viewBox="0 0 1921 1080">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="0.023" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#353535"/>
+      <stop offset="0.202" stop-color="#1f1f1f"/>
+      <stop offset="0.445" stop-color="#0e0e0e"/>
+      <stop offset="0.703" stop-color="#030303"/>
+      <stop offset="1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.51" stop-color="#fff" stop-opacity="0.102"/>
+      <stop offset="1" stop-color="gray" stop-opacity="0.039"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_56366" data-name="Group 56366" transform="translate(0.5 0.5)">
+    <rect id="Rectangle_14173" data-name="Rectangle 14173" width="1920" height="1079" rx="4" stroke="rgba(0,0,0,0)" stroke-width="1" fill="url(#linear-gradient)"/>
+    <path id="Line_4" data-name="Line 4" d="M0,836.25A1.25,1.25,0,0,1-1.25,835V0A1.25,1.25,0,0,1,0-1.25,1.25,1.25,0,0,1,1.25,0V835A1.25,1.25,0,0,1,0,836.25Z" transform="translate(400 119)" fill="url(#linear-gradient-2)"/>
+    <path id="Line_5" data-name="Line 5" d="M0,836.25A1.25,1.25,0,0,1-1.25,835V0A1.25,1.25,0,0,1,0-1.25,1.25,1.25,0,0,1,1.25,0V835A1.25,1.25,0,0,1,0,836.25Z" transform="translate(676 119)" fill="url(#linear-gradient-2)"/>
+    <path id="Line_6" data-name="Line 6" d="M0,836.25A1.25,1.25,0,0,1-1.25,835V0A1.25,1.25,0,0,1,0-1.25,1.25,1.25,0,0,1,1.25,0V835A1.25,1.25,0,0,1,0,836.25Z" transform="translate(952 119)" fill="url(#linear-gradient-2)"/>
+    <path id="Line_7" data-name="Line 7" d="M0,836.25A1.25,1.25,0,0,1-1.25,835V0A1.25,1.25,0,0,1,0-1.25,1.25,1.25,0,0,1,1.25,0V835A1.25,1.25,0,0,1,0,836.25Z" transform="translate(1228 119)" fill="url(#linear-gradient-2)"/>
+    <path id="Line_8" data-name="Line 8" d="M0,836.25A1.25,1.25,0,0,1-1.25,835V0A1.25,1.25,0,0,1,0-1.25,1.25,1.25,0,0,1,1.25,0V835A1.25,1.25,0,0,1,0,836.25Z" transform="translate(1504 119)" fill="url(#linear-gradient-2)"/>
+    <path id="Path_111716" data-name="Path 111716" d="M29.78,1.236H14.814V-13.488H9.746V1.236H-5.22V5.983H9.746V20.627h5.069V5.983H29.78Z" transform="translate(478.792 265.76) rotate(-45)" fill="#fff" opacity="0.56"/>
+    <g id="Ellipse_9929" data-name="Ellipse 9929" transform="translate(1414 536)" fill="none" stroke="#fff" stroke-width="2" opacity="0.56">
+      <circle cx="16" cy="16" r="16" stroke="none"/>
+      <circle cx="16" cy="16" r="15" fill="none"/>
+    </g>
+  </g>
+</svg>

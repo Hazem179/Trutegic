@@ -3,7 +3,7 @@
 
 {% block content %}
 
-  <section id="hero" class="hero-home">
+  <section id="hero" style="background-image: linear-gradient(to bottom, #000000C4 0%, #0000000D 100%), url('{% static 'img/bg-header.png' %}');" >
     <div class="container d-flex align-items-center flex-column">
       <div class="heading">
         <h2 class="uppercase">
@@ -14,8 +14,8 @@
           viverra mollis, leo lacus gravida ante, porttitor lobortis nulla nulla volutpat neque.
         </p>
         <div class="buttons">
-          <a class="uppercase primary-btn" href="#">freE CONSULTATION</a>
-          <a class="uppercase whitebrder-btn" href="#contact">contact us</a>
+          <a class="uppercase primary-btn" href="{% url 'main:consultation' %}">freE CONSULTATION</a>
+          <a class="uppercase whitebrder-btn" href="{% url 'main:contact' %}">contact us</a>
         </div>
       </div>
     </div>
@@ -159,8 +159,8 @@
           viverra mollis, leo lacus gravida ante, porttitor
         </p>
         <div class="buttons">
-          <a class="uppercase primary-btn" href="#">GET IT NOW</a>
-          <a class="uppercase whitebrder-btn" href="#contact">LEARN MORE</a>
+          <a class="uppercase primary-btn" href="{% url 'main:consultation' %}">GET IT NOW</a>
+          <a class="uppercase whitebrder-btn" href="{% url 'main:consultation' %}">LEARN MORE</a>
         </div>
       </div>
     </section>

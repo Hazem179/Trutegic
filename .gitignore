@@ -3,3 +3,4 @@
 /pages/migrations
 /dashboard/migrations
 Site/settings.py
+.gitignore

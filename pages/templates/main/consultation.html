@@ -1,0 +1,214 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+   <section id="hero" class="hero-partnership" style="background-image: linear-gradient(to bottom, #000000C4 0%, #0000000D 100%), url('{% static 'img/bg-consultation.png' %}');">
+        <div class="container d-flex align-items-center flex-column">
+            <div class="heading">
+                <h2>
+                    <span>
+                        Do You Need A Consultation ?
+                    </span>
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper,
+                    neque ut viverra mollis, leo lacus gravida ante, porttitor lobortis nulla nulla volutpat neque.
+                </p>
+                <div class="buttons">
+                    <a class="uppercase whitebrder-btn" href="#">GET IT NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   {% include 'components/counter.html' %}
+
+
+    <main>
+{% include 'components/clients_component.html' %}
+        <section class="report">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="border-title">
+                            <h5 class="h5">Why Would Your Business</h5>
+                        </div>
+                        <div class="border-title">
+                            <h5 class="h5">Need A Conultation?</h5>
+                        </div>
+                        <p class="left-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla
+                            semper, neque ut viverra mollis, leo lacus gravida ante, porttitor
+                        </p>
+                        <a class="uppercase secondary-btn" href="#">LET'S TALK</a>
+                    </div>
+                    <div class="col-md-4 text-right text-sm-center">
+                        <img src="{% static 'img/meeting.svg' %}" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <div class="title">
+                    <h3 class="capital">
+                        why us?
+                    </h3>
+                </div>
+                <p class="center-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper,
+                    neque ut
+                    viverra mollis, leo lacus gravida ante, porttitor
+                </p>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-11 m-auto" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <img src="{% static 'img/icon-wallet-check.svg' %}">
+                            </div>
+                            <h6>
+                                real value
+                            </h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit.
+                                Nulla semper, neque
+                                ut
+                                viverra mollis, leo lacus gravida ante, porttitor
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-11 m-auto" data-aos="fade-left" data-aos-duration="1500">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <img src="{% static 'img/icon-global.svg'%}">
+                            </div>
+                            <h6>
+                                Global Expansion
+                            </h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit.
+                                Nulla semper, neque
+                                ut
+                                viverra mollis, leo lacus gravida ante, porttitor
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-11 m-auto" data-aos="fade-left" data-aos-duration="2000">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <img src="{% static 'img/icon-activity.svg' %}">
+                            </div>
+                            <h6>
+                                Business Development
+                            </h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit.
+                                Nulla semper, neque
+                                ut
+                                viverra mollis, leo lacus gravida ante, porttitor
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h3 class="h3 text-center">
+                    Contact Us
+                </h3>
+                <p class="center-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper,
+                    neque ut
+                    viverra mollis, leo lacus gravida ante, porttitor
+                </p>
+                <div class="bg">
+                    <div class="row justify-content-evenly align-items-center">
+                        <div class="col-lg-5 col-md-5 mb-4">
+                            <div class="border-title">
+                                <h5 class="h5">How Much It Cost?</h5>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit.
+                                Nulla semper, neque
+                                ut viverra mollis, leo lacus gravida ante, porttitor
+                            </p>
+                            <div class="border-title">
+                                <h5 class="h5">Old School ! Come Visit Us</h5>
+                            </div>
+                            <div class="info">
+                                <img src="{% static 'img/icon-pin.svg' %}">
+                                <a href="#">
+                                    Egypt , Mansoura , Ahmed Maher Street
+                                </a>
+                            </div>
+                            <div class="info">
+                                <img src="{% static 'img/icon-phone.svg' %}">
+                                <a href="tel:+201021489394">
+                                    +201021489394
+                                </a>
+                            </div>
+                            <div class="info">
+                                <img src="{% static 'img/icon-whatsapp.svg' %}">
+                                <a href="https://wa.me/+966538111700" target="_blank">
+                                    +966538111700
+                                </a>
+                            </div>
+                            <div class="info">
+                                <img src="{% static 'img/icon-sms.svg' %}">
+                                <a href="mailto:Info@Example.Com" target="_blank">
+                                    Info@Example.Com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-7 form">
+                            <h5>Let's Have A Chat, Coffee On Us !</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit.
+                                Nulla semper, neque
+                                ut
+                            </p>
+                            <div class="col-md-12 form-group">
+                                <input type="text" required name="name" class="form-control" id="name"
+                                    placeholder="Name" />
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input type="tel" class="form-control" required name="phone-number" id="phone-number"
+                                    placeholder="Phone Number" />
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input type="email" class="form-control" required name="email" id="email"
+                                    placeholder="E-Mail" />
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <select class="form-select form-control" aria-label="Default select example">
+                                    <option selected>subject</option>
+                                    <option value="1">consultation</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <select class="form-select form-control" aria-label="Default select example">
+                                    <option selected>Online</option>
+                                    <option value="1">offline</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input type="date" class="form-control" required name="date" id="date"
+                                    placeholder="Date" />
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <textarea class="form-control" required name="message" rows="4"
+                                    placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-md-12 submit-box">
+                                <button type="submit" class="secondary-btn">SEND NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

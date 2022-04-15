@@ -1,4 +1,252 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <main class="page">
+        <div class="board">
+            <div class="container">
+                <h3 class="h3 text-center">
+                    Our Board
+                </h3>
+                <p class="center-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper,
+                    neque ut
+                    viverra mollis, leo lacus gravida ante, porttitor
+                </p>
+                <div class="row justify-content-center">
+{#                    {% for member in team %}#}
+{#                        <div class="col-lg-4 col-md-5 col-sm-6 col-10">#}
+{#                            <div class="board team-box">#}
+{#                                <img src="{{ member.image.url }}" class="img-fluid">#}
+{#                                <h6>#}
+{#                                    {{ member.name }}#}
+{#                                </h6>#}
+{#                                <p>{{ member.title }}</p>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        </div>#}
+{#                    {% endfor %}#}
+            </div>
+        </div>
 
+        <section class="teams">
+            <!-- First Team -->
+            <div class="container">
+                <h3 class="h3 text-center">
+                    Product Design Team
+                </h3>
+                <p class="center-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper,
+                    neque ut
+                    viverra mollis, leo lacus gravida ante, porttitor
+                </p>
+                <div class="row justify-content-center gx-0">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="team-box">
+                            <img src="assets/img/team-2.jpg" class="img-fluid">
+                            <h6>
+                                Ahmed Khaled
+                            </h6>
+                            <p>Business Developer</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="team-box">
+                            <img src="assets/img/team-2.jpg" class="img-fluid">
+                            <h6>
+                                Ahmed Khaled
+                            </h6>
+                            <p>Business Developer</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="team-box">
+                            <img src="assets/img/team-2.jpg" class="img-fluid">
+                            <h6>
+                                Ahmed Khaled
+                            </h6>
+                            <p>Business Developer</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="team-box">
+                            <img src="assets/img/team-2.jpg" class="img-fluid">
+                            <h6>
+                                Ahmed Khaled
+                            </h6>
+                            <p>Business Developer</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="team-box">
+                            <img src="assets/img/team-2.jpg" class="img-fluid">
+                            <h6>
+                                Ahmed Khaled
+                            </h6>
+                            <p>Business Developer</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="team-box">
+                            <img src="assets/img/team-2.jpg" class="img-fluid">
+                            <h6>
+                                Ahmed Khaled
+                            </h6>
+                            <p>Business Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-{% block content %} team page {% endblock %}
+            <!-- second Team -->
+            <div class="container">
+                <h3 class="h3 text-center">
+                    Backend Team
+                </h3>
+                <p class="center-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper,
+                    neque ut
+                    viverra mollis, leo lacus gravida ante, porttitor
+                </p>
+                <div class="row justify-content-center gx-0">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="team-box">
+                            <img src="assets/img/team-2.jpg" class="img-fluid">
+                            <h6>
+                                Ahmed Khaled
+                            </h6>
+                            <p>Business Developer</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="team-box">
+                            <img src="assets/img/team-2.jpg" class="img-fluid">
+                            <h6>
+                                Ahmed Khaled
+                            </h6>
+                            <p>Business Developer</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="team-box">
+                            <img src="assets/img/team-2.jpg" class="img-fluid">
+                            <h6>
+                                Ahmed Khaled
+                            </h6>
+                            <p>Business Developer</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="team-box">
+                            <img src="assets/img/team-2.jpg" class="img-fluid">
+                            <h6>
+                                Ahmed Khaled
+                            </h6>
+                            <p>Business Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3rd Team -->
+            <div class="container">
+                <h3 class="h3 text-center">
+                    Frontend Team
+                </h3>
+                <p class="center-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper,
+                    neque ut
+                    viverra mollis, leo lacus gravida ante, porttitor
+                </p>
+                <div class="row justify-content-center gx-0">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="team-box">
+                            <img src="assets/img/team-2.jpg" class="img-fluid">
+                            <h6>
+                                Ahmed Khaled
+                            </h6>
+                            <p>Business Developer</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="team-box">
+                            <img src="assets/img/team-2.jpg" class="img-fluid">
+                            <h6>
+                                Ahmed Khaled
+                            </h6>
+                            <p>Business Developer</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="team-box">
+                            <img src="assets/img/team-2.jpg" class="img-fluid">
+                            <h6>
+                                Ahmed Khaled
+                            </h6>
+                            <p>Business Developer</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="team-box">
+                            <img src="assets/img/team-2.jpg" class="img-fluid">
+                            <h6>
+                                Ahmed Khaled
+                            </h6>
+                            <p>Business Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4th Team -->
+            <div class="container">
+                <h3 class="h3 text-center">
+                    Flutter Team
+                </h3>
+                <p class="center-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper,
+                    neque ut
+                    viverra mollis, leo lacus gravida ante, porttitor
+                </p>
+                <div class="row justify-content-center gx-0">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="team-box">
+                            <img src="assets/img/team-2.jpg" class="img-fluid">
+                            <h6>
+                                Ahmed Khaled
+                            </h6>
+                            <p>Business Developer</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="team-box">
+                            <img src="assets/img/team-2.jpg" class="img-fluid">
+                            <h6>
+                                Ahmed Khaled
+                            </h6>
+                            <p>Business Developer</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="team-box">
+                            <img src="assets/img/team-2.jpg" class="img-fluid">
+                            <h6>
+                                Ahmed Khaled
+                            </h6>
+                            <p>Business Developer</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-10">
+                        <div class="team-box">
+                            <img src="assets/img/team-2.jpg" class="img-fluid">
+                            <h6>
+                                Ahmed Khaled
+                            </h6>
+                            <p>Business Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}
+

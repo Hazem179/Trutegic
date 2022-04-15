@@ -1,10 +1,9 @@
 {% extends 'base.html' %}
-
+{% load static %}
 
 
 {% block content %}
-<body>
-<section id="hero" class="hero-services">
+<section id="hero" class="hero-services" style="background-image: linear-gradient(to bottom, #000000C4 0%, #0000000D 100%), url('{% static 'img/bg-services.svg' %}');">
         <div class="container d-flex align-items-center flex-column">
             <div class="heading">
                 <h2>

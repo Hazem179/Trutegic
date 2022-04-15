@@ -15,13 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-import os.path
-
-STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR,'media/')
-
 
 
 # Quick-start development settings - unsuitable for production
@@ -31,17 +24,22 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media/')
 SECRET_KEY = 'django-insecure-b)2@p%$4p8^47*u8s&4$216(*0*4l%q6_j(-3#%mr7_cyyaiuw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-env = 'prod'
+env = 'dev'
 
 if env == 'prod':
     DEBUG = False
 else:
     DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'www.trustegiceg.com']
+ALLOWED_HOSTS = ['*']
+
+import os.path
+
+STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
-STATIC_ROOT = 'static'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -53,6 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'phonenumber_field',
     'pages',
+    'dashboard',
 ]
 
 MIDDLEWARE = [
