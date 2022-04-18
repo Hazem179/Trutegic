@@ -43,8 +43,6 @@ def partnership(request):
 
 
 def services(request):
-    all = Advisor.objects.all()[0]
-    print(all.times.all())
     return render(request, 'main/services.html', {'section': 'service'})
 
 
