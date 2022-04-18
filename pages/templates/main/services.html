@@ -14,8 +14,8 @@
                     neque ut viverra mollis, leo lacus gravida ante, porttitor lobortis nulla nulla volutpat neque.
                 </p>
                 <div class="buttons">
-                    <a class="uppercase primary-btn" href="#">freE CONSULTATION</a>
-                    <a class="uppercase whitebrder-btn" href="contact.html">contact us</a>
+                    <a class="uppercase primary-btn" href="{% url 'main:consultation' %}">freE CONSULTATION</a>
+                    <a class="uppercase whitebrder-btn" href="{% url 'main:contact' %}">contact us</a>
                 </div>
             </div>
         </div>
@@ -36,8 +36,8 @@
                     viverra mollis, leo lacus gravida ante, porttitor
                 </p>
                 <div class="buttons">
-                    <a class="uppercase primary-btn" href="#">GET IT NOW</a>
-                    <a class="uppercase whitebrder-btn" href="#">LEarn more</a>
+                    <a class="uppercase primary-btn" href="{% url 'main:consultation' %}">GET IT NOW</a>
+                    <a class="uppercase whitebrder-btn" href="{% url 'main:contact' %}">LEarn more</a>
                 </div>
             </div>
         </section>

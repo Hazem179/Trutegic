@@ -1,6 +1,9 @@
 from django.contrib import admin
 from .models import Team
 # Register your models here.
+
 @admin.register(Team)
 class TeamAdmin(admin.ModelAdmin):
-    list_display = ('name','title','email','section')
+    list_display = ('id','name','title','email','section')
+    admin_order_field = ('name')
+

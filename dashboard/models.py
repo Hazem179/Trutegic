@@ -11,7 +11,7 @@ class Team(models.Model):
     title = models.CharField(max_length=100)
     section = models.CharField(max_length=100,choices=SECTIONS,default='board')
     email = models.EmailField()
-    image = models.ImageField()
+    image = models.ImageField(upload_to='team/')
     def __str__(self):
         return self.name
 

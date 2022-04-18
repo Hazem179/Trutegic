@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-b)2@p%$4p8^47*u8s&4$216(*0*4l%q6_j(-3#%mr7_cyyaiuw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-env = 'dev'
+env = 'prod'
 
 if env == 'prod':
     DEBUG = False
@@ -38,7 +38,8 @@ import os.path
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # Application definition
 
@@ -49,9 +50,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'phonenumber_field',
     'pages',
     'dashboard',
+    'phonenumber_field',
+
 ]
 
 MIDDLEWARE = [

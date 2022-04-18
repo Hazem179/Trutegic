@@ -2,7 +2,8 @@
 {% load static %}
 
 {% block content %}
-   <section id="hero" class="hero-partnership" style="background-image: linear-gradient(to bottom, #000000C4 0%, #0000000D 100%), url('{% static 'img/bg-consultation.png' %}');">
+    <section id="hero" class="hero-partnership"
+             style="background-image: linear-gradient(to bottom, #000000C4 0%, #0000000D 100%), url('{% static 'img/bg-consultation.png' %}');">
         <div class="container d-flex align-items-center flex-column">
             <div class="heading">
                 <h2>
@@ -15,17 +16,17 @@
                     neque ut viverra mollis, leo lacus gravida ante, porttitor lobortis nulla nulla volutpat neque.
                 </p>
                 <div class="buttons">
-                    <a class="uppercase whitebrder-btn" href="#">GET IT NOW</a>
+                    <a class="uppercase whitebrder-btn" href="{% url 'main:consultation' %}">GET IT NOW</a>
                 </div>
             </div>
         </div>
     </section>
 
-   {% include 'components/counter.html' %}
+    {% include 'components/counter.html' %}
 
 
     <main>
-{% include 'components/clients_component.html' %}
+        {% include 'components/clients_component.html' %}
         <section class="report">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
@@ -40,7 +41,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla
                             semper, neque ut viverra mollis, leo lacus gravida ante, porttitor
                         </p>
-                        <a class="uppercase secondary-btn" href="#">LET'S TALK</a>
+                        <a class="uppercase secondary-btn" href="{% url 'main:consultation' %}">LET'S TALK</a>
                     </div>
                     <div class="col-md-4 text-right text-sm-center">
                         <img src="{% static 'img/meeting.svg' %}" class="img-fluid">
@@ -81,7 +82,7 @@
                     <div class="col-md-4 col-sm-6 col-11 m-auto" data-aos="fade-left" data-aos-duration="1500">
                         <div class="feature-box">
                             <div class="feature-icon">
-                                <img src="{% static 'img/icon-global.svg'%}">
+                                <img src="{% static 'img/icon-global.svg' %}">
                             </div>
                             <h6>
                                 Global Expansion
@@ -170,41 +171,69 @@
                                 Nulla semper, neque
                                 ut
                             </p>
-                            <div class="col-md-12 form-group">
-                                <input type="text" required name="name" class="form-control" id="name"
-                                    placeholder="Name" />
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="tel" class="form-control" required name="phone-number" id="phone-number"
-                                    placeholder="Phone Number" />
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="email" class="form-control" required name="email" id="email"
-                                    placeholder="E-Mail" />
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <select class="form-select form-control" aria-label="Default select example">
-                                    <option selected>subject</option>
-                                    <option value="1">consultation</option>
-                                </select>
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <select class="form-select form-control" aria-label="Default select example">
-                                    <option selected>Online</option>
-                                    <option value="1">offline</option>
-                                </select>
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="date" class="form-control" required name="date" id="date"
-                                    placeholder="Date" />
-                            </div>
-                            <div class="col-md-12 form-group">
+                            <form method="post">
+                                <div class="col-md-12 form-group">
+                                    <input type="text" name="name" class="form-control" id="name"
+                                           placeholder="Name"/>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <input type="tel" class="form-control" required name="phone" id="phone-number"
+                                           placeholder="Phone Number"/>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <input type="email" class="form-control" required name="email" id="email"
+                                           placeholder="E-Mail"/>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <select class="form-select form-control" aria-label="Default select example"
+                                            name="consultation">
+                                        <option selected>subject</option>
+                                        <option value="1">Marketing plan</option>
+                                        <option value="2">Business plan</option>
+                                        <option value="3">Social media plan</option>
+                                        <option value="4">Hiring techniques</option>
+                                        <option value="5">Software developing</option>
+                                        <option value="6">Startup Consultation</option>
+                                        <option value="7">Get technical partnership</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <select class="form-select form-control" aria-label="Default select example"
+                                            name="meeting">
+                                        <option selected>Online</option>
+                                        <option value="offline">offline</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <select class="form-select form-control" aria-label="Default select example"
+                                            name="meeting">
+                                        <option selected>available day</option>
+                                        <option value="offline">sat</option>
+                                        <option value="offline">sun</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <select class="form-select form-control" aria-label="Default select example"
+                                            name="meeting">
+                                        <option selected>available times</option>
+                                        <option value="offline">1:00 - 1:30</option>
+                                        <option value="offline">2:00 - 2:00</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <input type="datetime-local" class="form-control" required name="reservation"
+                                           id="date"
+                                           placeholder="Date"/>
+                                </div>
+                                <div class="col-md-12 form-group">
                                 <textarea class="form-control" required name="message" rows="4"
-                                    placeholder="Message"></textarea>
-                            </div>
-                            <div class="col-md-12 submit-box">
-                                <button type="submit" class="secondary-btn">SEND NOW</button>
-                            </div>
+                                          placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-md-12 submit-box">
+                                    {% csrf_token %}
+                                    <button type="submit" class="secondary-btn">SEND NOW</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
