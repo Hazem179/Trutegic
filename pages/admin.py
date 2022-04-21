@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Customer,Advisor,AvailableTimes,Reservation
+from .models import Customer,Advisor,AvailableTimes,Reservation,Consultation,AdvisorType
 # Register your models here.
 
 
@@ -11,7 +11,8 @@ class CustomersAdmin(admin.ModelAdmin):
 
 @admin.register(Advisor)
 class AdvisorAdmin(admin.ModelAdmin):
-    list_display = ('name','type','email')
+    list_display = ('name','email')
+
 
 
 @admin.register(AvailableTimes)
@@ -27,5 +28,13 @@ class ReservationAdmin(admin.ModelAdmin):
     list_display = ['id','customer','advisor','time']
 
 
+@admin.register(Consultation)
+class ConsultationAdmin(admin.ModelAdmin):
+    list_display = ['name','phone','consultation']
+
+
+@admin.register(AdvisorType)
+class AdvisorTypeAdmin(admin.ModelAdmin):
+    list_display = ['adv_type']
 
 

@@ -20,28 +20,30 @@ DAYS_OF_WEEK = (
 
 
 
-CONSULTATIONS = (('1', 'Marketing plan'),
-                 ('2', 'Business plan'),
-                 ('3', 'Social media plan'),
-                 ('4', 'Hiring techniques'),
-                 ('5', 'Software developing'),
-                 ('6', 'Startup Consultation'),
-                 ('7', 'Get technical partnership'))
+CONSULTATIONS = (('marketing_plan', 'Marketing plan'),
+                 ('business_plan', 'Business plan'),
+                 ('social_media_plan', 'Social media plan'),
+                 ('hiring_techniques', 'Hiring techniques'),
+                 ('software_developing', 'Software developing'),
+                 ('startup_consultation', 'Startup Consultation'),
+                 ('get_technical_partnership', 'Get technical partnership'))
 
-HOURS = (('1:00-2:00pm','1:00-2:00pm'),
-         ('2:00-3:00pm','2:00-3:00pm'),
-         ('3:00-4:00pm','3:00-4:00pm'))
+
+class AdvisorType(models.Model):
+    adv_type = models.CharField(choices=CONSULTATIONS,max_length=32)
+
+    def __str__(self):
+        return self.adv_type
+
 
 
 class Customer(models.Model):
     name = models.CharField(max_length=200)
     phone = models.CharField(max_length=15)
     email = models.EmailField()
-    consultation = models.CharField(max_length=150,choices=CONSULTATIONS)
+    consultation = models.CharField(max_length=32,choices=CONSULTATIONS)
     message = models.TextField()
     created_at = models.DateTimeField(default=timezone.now)
-
-
 
     def __str__(self):
        return self.name
@@ -53,7 +55,7 @@ class Customer(models.Model):
 class Advisor(models.Model):
     name = models.CharField(max_length=200)
     email = models.EmailField()
-    type = models.CharField(max_length=150,choices=CONSULTATIONS)
+    type = models.ManyToManyField(AdvisorType,related_name='types')
 
 
     def __str__(self):
@@ -88,12 +90,12 @@ class Consultation(models.Model):
     email = models.EmailField()
     consultation = models.CharField(max_length=150, choices=CONSULTATIONS)
     message = models.TextField()
-    reservation =  models.DateTimeField()
+    reservation = models.DateTimeField()
     meeting = models.CharField(choices=MEETING,max_length=12)
     created_at = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
-        self.name
+       return self.name
 
 
 
