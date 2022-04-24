@@ -203,24 +203,53 @@
                                 </div>
                                 <div class="col-md-12 form-group">
                                     <input type="datetime-local" class="form-control" required name="reservation"
-                                           id="date" value="{{ day }}T{{ from }}"
+                                           id="date"
                                            placeholder="Date"/>
                                 </div>
                                 <div class="col-md-12 form-group">
-                                <textarea class="form-control" required name="message" rows="4"
-                                          placeholder="Message"></textarea>
+                                                                <textarea class="form-control" required name="message"
+                                                                          rows="4"
+                                                                          placeholder="Message"></textarea>
                                 </div>
                                 <div class="col-md-12 submit-box">
                                     {% csrf_token %}
-                                    <button type="submit" class="secondary-btn">SEND NOW</button>
+                                    <button type="submit" class="secondary-btn" name="submit_form">SEND NOW</button>
                                 </div>
+                                <p id="test" style="display: none">{{ consultations }}</p>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
+            </div>
         </section>
     </main>
+    <script>
+
+        document.getElementById('cons').addEventListener('change', function () {
+            const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+            fetch('{% url 'main:consultation' %}', {
+                method: 'POST', // or 'PUT'
+                headers: {
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json',
+                    "X-CSRFToken": csrftoken
+                },
+                body: JSON.stringify({
+                    'type': this.value,
+                }),
+            }).then(response => response.json())
+                .then(result => {
+                    console.log(result.av_times);
+                    document.querySelector('#date').value = result.av_times
+                    document.querySelector('#test').style.display = 'block'
+                })
+
+        });
+
+
+
+    </script>
 
 {% endblock %}
 

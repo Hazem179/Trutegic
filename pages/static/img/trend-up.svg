@@ -1,0 +1,8 @@
+<svg id="trend-up" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="Group_706" data-name="Group 706" transform="translate(15 19)" opacity="0.4">
+    <path id="Vector" d="M18,0,9.6,8.4,6.4,3.6,0,10" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <path id="Vector-2" data-name="Vector" d="M0,0H4V4" transform="translate(14)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  </g>
+  <path id="Vector-3" data-name="Vector" d="M14,40H26c10,0,14-4,14-14V14C40,4,36,0,26,0H14C4,0,0,4,0,14V26C0,36,4,40,14,40Z" transform="translate(4 4)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  <path id="Vector-4" data-name="Vector" d="M0,0H48V48H0Z" fill="none" opacity="0"/>
+</svg>

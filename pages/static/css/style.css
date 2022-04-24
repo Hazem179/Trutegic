@@ -70,7 +70,7 @@ section {
 }
 
 .page {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 /*---- Preloader --------*/
@@ -97,6 +97,26 @@ section {
   height: 60px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 
@@ -428,7 +448,9 @@ header.invert .mobile-nav-toggle i.fa-times {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 .hero-home {
+  background-image: linear-gradient(to bottom, #000000C4 0%, #0000000D 100%), url('../img/bg-header.png');
   background-position: top right;
 }
 
@@ -980,7 +1002,7 @@ footer .copyright {
 
 /******** About Page*******/
 .hero-about {
-
+  background-image: linear-gradient(to bottom, #000000C4 0%, #0000000D 100%), url('../img/bg-about.png');
   background-position: center;
 }
 
@@ -1072,7 +1094,7 @@ footer .copyright {
 
 /****** services page *****/
 .hero-services {
-
+  background-image: linear-gradient(to bottom, #000000C4 0%, #0000000D 100%), url('../img/bg-services.svg');
   padding-top: 170px;
   background-position: center;
 }
@@ -1101,7 +1123,7 @@ footer .copyright {
 
 /******* partnership page *******/
 .hero-partnership {
-
+  background-image: linear-gradient(to bottom, #000000C4 0%, #0000000D 100%), url(../img/bg-partnership.svg);
   padding-top: 170px;
 }
 
@@ -1187,11 +1209,201 @@ footer .copyright {
 input[type="date"]::-webkit-calendar-picker-indicator {
   background-image: url(../img/calender.png);
   background-size: 15px;
-background-position: center;
+  background-position: center;
 }
 
 
 
+
+
+
+/********** single service page ***********/
+.breadcrumb {
+  width: calc(100% - 100px);
+  margin: 0 auto 1rem;
+  font-size: 14px;
+}
+
+.breadcrumb img {
+  width: 16px;
+}
+
+.breadcrumb-item a {
+  font-size: 14px;
+  color: black;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  float: unset;
+  padding-right: 0.5rem;
+  color: black;
+  content: "";
+  font-size: 16px;
+  font-family: "Font Awesome 5 Pro";
+}
+
+.breadcrumb-item.active {
+  color: #707070;
+}
+
+.hero {
+  background-color: #F8F8F8;
+  border-radius: 6px;
+  min-height: 80vh;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 100px);
+  margin: auto;
+}
+
+.heading-left {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.heading-left h2 {
+  margin: 1rem 0;
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+  width: fit-content;
+}
+
+.heading-left p {
+  width: 80%;
+  font-size: 16px;
+}
+
+.heading-left h2 span {
+  text-transform: capitalize;
+  color: black;
+  background-color: white;
+  padding: 0 3px;
+}
+
+.hero img {
+  width: 340px;
+}
+
+.text-md-right {
+  text-align: right !important;
+}
+
+
+.inner-services {
+  margin-bottom: 60px;
+}
+
+.inner-service-box {
+  background-color: #F8F8F8;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin: auto 0.5rem;
+  transition: all 0.5s;
+  height: calc(100% - 40px);
+  cursor: pointer;
+}
+
+.service-icon img {
+  width: 30px;
+}
+
+.inner-service-box h6 {
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  transition: all 0.5s;
+}
+
+.inner-service-box p {
+  color: #404040;
+  font-size: 12.5px;
+  line-height: 22px;
+  min-height: 106px;
+  overflow: hidden;
+  margin-bottom: 0;
+  transition: all 0.5s;
+  max-height: 110px;
+}
+
+.inner-service-box .primary-btn {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.inner-service-box:hover {
+  background-color: black;
+  transition: all 0.5s;
+  box-shadow: 0px 15px 25px #00000029;
+  height: 100%;
+}
+
+.inner-service-box:hover .service-icon img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.inner-service-box:hover h6 {
+  color: white;
+  transition: all 0.5s;
+}
+
+.inner-service-box:hover p {
+  color: #F8F8F8;
+  transition: all 0.5s;
+  height: fit-content;
+}
+
+.inner-service-box:hover .primary-btn {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+
+.talk {
+  background-image: url(../img/bg-consultation.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  width: 82%;
+  margin: auto;
+  border-radius: 5px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  min-height: 50vh;
+  margin-bottom: 3em;
+}
+
+.talk .consultation-text h3 {
+  font-weight: 500;
+}
+
+.talk .consultation-text p {
+  font-weight: 300;
+}
+
+.talk .primary-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+}
 
 
 
@@ -1330,7 +1542,8 @@ background-position: center;
     background-position: unset;
   }
 
-  .heading h2 {
+  .heading h2,
+  .heading-left h2 {
     font-size: 37px;
   }
 
@@ -1351,7 +1564,8 @@ background-position: center;
     width: 150px;
   }
 
-  .consultation-text {
+  .consultation-text,
+  .talk .consultation-text {
     width: 90%;
   }
 
@@ -1405,6 +1619,10 @@ background-position: center;
 
 
 @media (max-width:768px) {
+  .page {
+    margin-top: 80px;
+  }
+
   header.header-scrolled {
     padding: 0 15px;
   }
@@ -1419,8 +1637,14 @@ background-position: center;
     right: 16px;
   }
 
-  header {
+  header,
+  .breadcrumb,
+  .hero {
     width: calc(100% - 30px);
+  }
+
+  .hero {
+    padding: 1rem;
   }
 
   .about {
@@ -1474,8 +1698,17 @@ background-position: center;
     width: calc(100% - 30px);
   }
 
+  .text-md-right {
+    text-align: center !important;
+  }
+
   .text-sm-center {
     text-align: center !important;
+  }
+
+  .hero img {
+    width: 240px;
+    margin-top: 1rem;
   }
 
   .report {
@@ -1485,6 +1718,10 @@ background-position: center;
   .report img {
     width: 200px;
     margin-top: 2rem;
+  }
+
+  .heading-left p {
+    width: unset;
   }
 }
 
@@ -1497,7 +1734,9 @@ background-position: center;
 }
 
 @media (max-width:575px) {
-  .heading h2 {
+
+  .heading h2,
+  .heading-left h2 {
     font-size: 30px;
   }
 
@@ -1596,6 +1835,7 @@ background-position: center;
   .steps img {
     width: 260px;
   }
+
 }
 
 
@@ -1650,7 +1890,8 @@ background-position: center;
     align-items: center;
   }
 
-  .heading h2 {
+  .heading h2,
+  .heading-left h2 {
     font-size: 26px;
     line-height: 35px;
   }
@@ -1673,7 +1914,8 @@ background-position: center;
     padding: 5px 10px;
   }
 
-  .consultation {
+  .consultation,
+  .talk {
     width: 94%;
   }
 

@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+    <main class="page">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'main:home' %}"><img src="{% static 'img/house.png' %}"></a>
+                </li>
+                <li class="breadcrumb-item"><a href="{% url 'main:services' %}">Services</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Software Development</li>
+            </ol>
+        </nav>
+        <div class="hero">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-8">
+                        <div class="heading-left">
+                            <h2 class="capital">
+                                <span>Software Development</span>
+                            </h2>
+                            <p class="left-p">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit.
+                                Nulla semper, neque
+                                ut viverra mollis, leo lacus gravida ante, porttitor lobortis nulla nulla volutpat
+                                neque. </p>
+                            <div class="buttons">
+                                <a class="uppercase secondary-btn" href="{% url 'main:consultation' %}">get it now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-md-right">
+                        <img src="{% static 'img/img-development.png' %}" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include 'components/clients_component.html' %}
+        {% include 'components/sw_services.html' %}
+        {% include 'components/talk.html' %}
+
+    </main>
+{% endblock %}

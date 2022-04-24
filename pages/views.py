@@ -1,8 +1,11 @@
-from django.shortcuts import render, redirect,HttpResponse
-from .models import AvailableTimes,CONSULTATIONS
+from django.shortcuts import render, redirect, HttpResponse
+from .models import AvailableTimes, CONSULTATIONS, AdvisorType
 from dashboard.models import Team
 from django.forms import ValidationError
-from .forms import CustomerForm,ConsultationForm
+from .forms import CustomerForm, ConsultationForm
+from django.http import HttpResponse, JsonResponse
+import json
+from .utils import available_days_filter,available_hours
 
 
 # Create your views here.
@@ -39,7 +42,7 @@ def partnership(request):
 
 
 def services(request):
-    return render(request, 'main/services.html', {'section': 'service'})
+    return render(request, 'main/services.html', {'section': 'services'})
 
 
 def team(request):
@@ -48,23 +51,46 @@ def team(request):
     return render(request, 'main/team.html', {'section': 'team', 'team': team})
 
 
-def is_ajax(request):
-    return request.META.get('HTTP_X_REQUESTED_WITH') == 'XMLHttpRequest'
+# def consultation(request):
+#     av_times = AvailableTimes.objects.filter(state='available')
+#     day = str(av_times.values_list('day',flat=True)[0])
+#     from_hour = str(av_times.values_list('from_hour', flat=True)[0].strftime("%H:%M"))
+#     to_hour = str(av_times.values_list('to_hour', flat=True)[0].strftime("%H:%M"))
+#     if request.method == 'POST':
+#         print(request.POST)
+#         form = ConsultationForm(request.POST)
+#         if form.is_valid():
+#             print(form['reservation'].value())
+#             form.save()
+#         else:
+#             print(form.errors)
+#
+#     return render(request, 'main/consultation.html', {'section': 'consultation','consultations':CONSULTATIONS,'day':day,'from':from_hour,'to':to_hour})
+#
 
 def consultation(request):
-
-    av_times = AvailableTimes.objects.filter(state='available')
-    day = str(av_times.values_list('day',flat=True)[0])
-    from_hour = str(av_times.values_list('from_hour', flat=True)[0].strftime("%H:%M"))
-    to_hour = str(av_times.values_list('to_hour', flat=True)[0].strftime("%H:%M"))
     if request.method == 'POST':
         form = ConsultationForm(request.POST)
-        if form.is_valid():
-            print(form['reservation'].value())
+        if 'submit_form' in request.POST and form.is_valid():
             form.save()
+            return redirect('main:home')
         else:
-            print(form.errors)
+            jsonData = json.loads(request.body)
+            adv = jsonData.get('type')
+            type_id = AdvisorType.objects.get(adv_type=adv).id
+            times = available_days_filter(type_id)
+            return JsonResponse({'av_times': str(times[:])})
 
-    return render(request, 'main/consultation.html', {'section': 'consultation','consultations':CONSULTATIONS,'day':day,'from':from_hour,'to':to_hour})
+    return render(request, 'main/consultation.html',
+                  {'section': 'consultation', 'consultations': CONSULTATIONS, })
 
 
+def entrepreneurship(request):
+    return render(request,'internal/entrepreneurship.html',{'section': 'service'})
+
+
+def marketing(request):
+    return render(request,'internal/marketing.html',{'section': 'service'})
+
+def sw_development(request):
+    return render(request,'internal/software-development.html',{'section': 'service'})

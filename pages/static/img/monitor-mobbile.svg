@@ -1,0 +1,9 @@
+<svg id="monitor-mobbile" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <path id="Vector" d="M16,28.84H8.42C1.68,28.84,0,27.16,0,20.42v-12C0,1.68,1.68,0,8.42,0H29.48c6.74,0,8.42,1.68,8.42,8.42" transform="translate(4 5.06)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  <path id="Vector-2" data-name="Vector" d="M0,9.04V0" transform="translate(20 33.9)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  <path id="Vector-3" data-name="Vector" d="M0,0H16" transform="translate(4 25.9)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" opacity="0.4"/>
+  <path id="Vector-4" data-name="Vector" d="M0,0H6.52" transform="translate(13.48 42.94)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  <path id="Vector-5" data-name="Vector" d="M18.94,5.92V17.34c0,4.74-1.18,5.92-5.92,5.92H5.92C1.18,23.26,0,22.08,0,17.34V5.92C0,1.18,1.18,0,5.92,0h7.1C17.76,0,18.94,1.18,18.94,5.92Z" transform="translate(25.06 19.68)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  <path id="Vector-6" data-name="Vector" d="M.495.5H.512" transform="translate(33.995 36)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" opacity="0.4"/>
+  <path id="Vector-7" data-name="Vector" d="M0,0H48V48H0Z" fill="none" opacity="0"/>
+</svg>
