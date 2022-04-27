@@ -5,7 +5,7 @@ from django.forms import ValidationError
 from .forms import CustomerForm, ConsultationForm
 from django.http import HttpResponse, JsonResponse
 import json
-from .utils import available_days_filter,available_hours
+from .utils import available_days_filter,date_for_weekday
 
 
 # Create your views here.
@@ -32,6 +32,7 @@ def contact(request):
             return redirect('main:contact')
         else:
             print(form.errors)
+            return HttpResponse(form.errors.values())
     else:
         form = CustomerForm()
     return render(request, 'main/contact.html', {'section': 'contact', 'from': form})
@@ -79,10 +80,10 @@ def consultation(request):
             adv = jsonData.get('type')
             type_id = AdvisorType.objects.get(adv_type=adv).id
             times = available_days_filter(type_id)
-            return JsonResponse({'av_times': str(times[:])})
+            return JsonResponse({'av_dates': times})
 
     return render(request, 'main/consultation.html',
-                  {'section': 'consultation', 'consultations': CONSULTATIONS, })
+                  {'section': 'consultation', 'consultations': CONSULTATIONS,})
 
 
 def entrepreneurship(request):

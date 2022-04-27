@@ -17,9 +17,9 @@ class AdvisorAdmin(admin.ModelAdmin):
 
 @admin.register(AvailableTimes)
 class AvailableTimesAdmin(admin.ModelAdmin):
-    list_display = ('week_day','from_hour','to_hour','advisor','state')
+    list_display = ('day','from_hour','to_hour','advisor','state')
     list_editable = ('from_hour','to_hour','state')
-    list_filter = ['advisor','state']
+    list_filter = ['advisor','state','day']
 
 
 

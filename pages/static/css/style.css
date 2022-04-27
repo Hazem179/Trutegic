@@ -1405,7 +1405,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 14px;
 }
 
-
+.selections select{
+  width: 48% !important;
+}
 
 /***** modal *****/
 .modal-header {

@@ -190,7 +190,7 @@
 
                                     <select class="form-select form-control" aria-label="Default select example"
                                             name="consultation" id="cons">
-                                        <option selected>subject</option>
+                                        <option selected disabled>subject</option>
                                         {% for key,value in consultations %}
                                             <option value={{ key }}>{{ value }}</option>{% endfor %}
                                     </select>
@@ -201,11 +201,14 @@
                                         <option selected value="online">Online</option>
                                     </select>
                                 </div>
-                                <div class="col-md-12 form-group">
-                                    <input type="datetime-local" class="form-control" required name="reservation"
-                                           id="date"
-                                           placeholder="Date"/>
-                                </div>
+{#                                <div class="col-md-12 form-group row selections justify-content-between mx-0">#}
+                                    {#                                    <input type="datetime-local" class="col-3 form-control" required name="reservation"#}
+                                    {#                                           id="date"#}
+                                    {#                                           placeholder="Date"/>#}
+{#                                    <select class="col-5 form-select form-control" id = 'day'></select>#}
+{#                                    <select class="col-5 form-select form-control"></select>#}
+{#                                </div>#}
+
                                 <div class="col-md-12 form-group">
                                                                 <textarea class="form-control" required name="message"
                                                                           rows="4"
@@ -237,17 +240,36 @@
                 },
                 body: JSON.stringify({
                     'type': this.value,
+
                 }),
             }).then(response => response.json())
                 .then(result => {
-                    console.log(result.av_times);
-                    document.querySelector('#date').value = result.av_times
-                    document.querySelector('#test').style.display = 'block'
+                    let day = document.querySelector("#day")
+                    let dates = result.av_dates
+                    day.innerHTML = ""
+                    showOptions(day,dates)
+
                 })
 
         });
 
-
+        function  showOptions(el,values){
+            let condition = Object.keys(values).length
+                    if (condition > 0) {
+                        for (let value in values) {
+                            let optionEl = document.createElement('option')
+                            optionEl.value = value;
+                            optionEl.innerText = `${value} ${values[value]}`
+                            el.append(optionEl)
+                        }
+                    } else {
+                        el.innerHTML = ""
+                    }
+        }
+        day.addEventListener('change',postSelection)
+        function postSelection(e){
+            console.log(e.target.value)
+        }
 
     </script>
 

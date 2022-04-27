@@ -1,46 +1,54 @@
 from datetime import datetime, date, timedelta
 from .models import AvailableTimes
 from collections import defaultdict
+import time
 
-free_days = []
-available_days = []
-available_hours = []
-days_set = []
-hours_set = []
-reservations = defaultdict(list)
+
+
+
 delt = timedelta(minutes=30)
 
 
 def available_days_filter(id):
+    free_weekdays = []
+    available_reservation_dates = []
+    days_dict = {}
     today = date.today()
-    available_days_db = AvailableTimes.objects.filter(advisor__type=id, state='available')
+    free_starting_hours = []
+    # Store available consultation object based on selected type
+    consultation_type_free_days = AvailableTimes.objects.filter(advisor__type=id, state='available')
 
-    for time in available_days_db:
-        free_days.append(time.day)
-        available_hours.append(time.from_hour)
-
-    for i in range(len(free_days)):
-        delta = free_days[i] - today
+    # Store days and hours of objects
+    for obj in consultation_type_free_days:
+        free_weekdays.append(obj.day)
+    # Store available reservations dates based on how far it from today
+    for i in range(len(free_weekdays)):
+        day_date = date_for_weekday(free_weekdays[i])
+        delta = day_date - today
         if delta.days > 1:
-            available_days.append(free_days[i])
+            available_reservation_dates.append(day_date)
+            days_dict[free_weekdays[i]] = day_date
+    free_weekdays_objects = AvailableTimes.objects.filter(advisor__type=id, state='available',day__in=days_dict.keys())
+    hr =  free_intervals(free_weekdays_objects)
 
-    open_days = AvailableTimes.objects.filter(advisor__type=id, state='available', day__in=available_days)
+    return days_dict
+
+
+
+def free_intervals(open_days):
+    free_hours = []
+
     for dates in range(len(open_days)):
-        day = open_days[dates].day
-        key = day.strftime("%m/%d/%Y")
+        day = date_for_weekday(open_days[dates].day)
         from_hours = open_days[dates].from_hour
         to_hours = open_days[dates].to_hour
         split_hours = convert_to_half(from_hours, to_hours)
-        for i in range(split_hours):
+        for i in range(split_hours+1):
             new_from = datetime.combine(day, from_hours)
-            hours_set.append(from_hours)
+            free_hours.append(from_hours)
             added_time = (new_from + delt).time()
             from_hours = added_time
-            days_set.append(day)
-    print(hours_set)
-
-
-    return available_days
+    return free_hours
 
 
 def convert_to_half(from_hour, to_hour):
@@ -49,3 +57,18 @@ def convert_to_half(from_hour, to_hour):
     hours = h2 - h1
     final = hours.seconds / 1800
     return int(final)
+
+
+def date_for_weekday(day_name: str):
+    day = time.strptime(day_name, "%A").tm_wday
+    today = date.today()
+    weekday = today.weekday()
+    return today + timedelta(days=day - weekday)
+
+def convert_hours(hours_list:list):
+    hours = []
+    for hour in range(len(hours)):
+        hour.strftime("%H:%M:%S")
+        hours.append(hour)
+
+    return hours

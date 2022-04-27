@@ -39,7 +39,7 @@ class AdvisorType(models.Model):
 
 class Customer(models.Model):
     name = models.CharField(max_length=200)
-    phone = models.CharField(max_length=15)
+    phone = models.CharField(max_length=21)
     email = models.EmailField()
     consultation = models.CharField(max_length=32, choices=SERVICES)
     message = models.TextField()
@@ -59,7 +59,7 @@ class Advisor(models.Model):
 
 
 class AvailableTimes(models.Model):
-    day = models.DateField(null=True)
+    day = models.CharField(max_length=10,choices=DAYS_OF_WEEK,null=True)
     from_hour = models.TimeField(null=True)
     to_hour = models.TimeField(null=True)
     advisor = models.ForeignKey(Advisor, on_delete=models.CASCADE, related_name='times')
@@ -67,12 +67,8 @@ class AvailableTimes(models.Model):
                                       ('not available', 'Not Available')), max_length=16, null=True)
     created_at = models.DateTimeField(default=timezone.now)
 
-    @property
-    def week_day(self):
-        return f'{self.day.strftime("%A")}'
-
     def __str__(self):
-        return f'{self.day.strftime("%A")}'
+        return self.day
 
 
 class Consultation(models.Model):
