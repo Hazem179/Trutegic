@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, HttpResponse
 from .models import AvailableTimes, CONSULTATIONS, AdvisorType
 from dashboard.models import Team
-from django.forms import ValidationError
+from django.contrib import messages
 from .forms import CustomerForm, ConsultationForm
 from django.http import HttpResponse, JsonResponse
 import json
@@ -29,10 +29,13 @@ def contact(request):
         form = CustomerForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, "Your message has been submitted.")
             return redirect('main:contact')
         else:
             print(form.errors)
-            return HttpResponse(form.errors.values())
+            messages.error(request,form.errors)
+            return redirect('main:contact')
+
     else:
         form = CustomerForm()
     return render(request, 'main/contact.html', {'section': 'contact', 'from': form})

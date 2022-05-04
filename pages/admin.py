@@ -8,10 +8,14 @@ class CustomersAdmin(admin.ModelAdmin):
     list_display = ('name','email','phone','created_at')
 
 
+class AvailableTimesInline(admin.TabularInline):
+    model = AvailableTimes
+
 
 @admin.register(Advisor)
 class AdvisorAdmin(admin.ModelAdmin):
     list_display = ('name','email')
+    inlines = [AvailableTimesInline,]
 
 
 

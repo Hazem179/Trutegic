@@ -1,81 +1,87 @@
- {% load static %}
+{% load static %}
 
 <form method="post">
-<section id="contact" class="contact">
-      <div class="container-fluid">
-        <div class="bg">
-          <div class="row justify-content-evenly align-items-center">
-            <div class="col-lg-5 col-md-5 mb-4">
-              <div class="border-title">
-                <h5 class="h5">find us</h5>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper, neque
-                ut viverra mollis, leo lacus gravida ante, porttitor
-              </p>
-              <div class="info">
-                <img src="{% static 'img/icon-pin.svg' %}" loading="lazy">
-                <a href="#">
-                  Egypt , Mansoura , Ahmed Maher Street
-                </a>
-              </div>
-              <div class="info">
-                <img src="{% static 'img/icon-phone.svg' %}" loading="lazy">
-                <a href="tel:+201021489394">
-                  +201021489394
-                </a>
-              </div>
-              <div class="info">
-                <img src="{% static 'img/icon-whatsapp.svg' %}" loading="lazy">
-                <a href="https://wa.me/+966538111700" target="_blank">
-                  +966538111700
-                </a>
-              </div>
-              <div class="info">
-                <img src="{% static 'img/icon-sms.svg' %}" loading="lazy">
-                <a href="mailto:Info@Example.Com" target="_blank">
-                  Info@Example.Com
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-7 form">
-              <h5>get in touch</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper, neque
-                ut
-              </p>
-              <div class="col-md-12 form-group">
+    <section id="contact" class="contact">
+        <div class="container-fluid">
+            <div class="bg">
+                <div class="row justify-content-evenly align-items-center">
+                    {% include 'components/messages.html' %}
+                    <div class="col-lg-5 col-md-5 mb-4">
+                        <div class="border-title">
+                            <h5 class="h5">find us</h5>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla
+                            semper, neque
+                            ut viverra mollis, leo lacus gravida ante, porttitor
+                        </p>
+                        <div class="info">
+                            <img src="{% static 'img/icon-pin.svg' %}" loading="lazy">
+                            <a href="#">
+                                Egypt , Mansoura , Ahmed Maher Street
+                            </a>
+                        </div>
+                        <div class="info">
+                            <img src="{% static 'img/icon-phone.svg' %}" loading="lazy">
+                            <a href="tel:+201021489394">
+                                +201021489394
+                            </a>
+                        </div>
+                        <div class="info">
+                            <img src="{% static 'img/icon-whatsapp.svg' %}" loading="lazy">
+                            <a href="https://wa.me/+966538111700" target="_blank">
+                                +966538111700
+                            </a>
+                        </div>
+                        <div class="info">
+                            <img src="{% static 'img/icon-sms.svg' %}" loading="lazy">
+                            <a href="mailto:Info@Example.Com" target="_blank">
+                                Info@Example.Com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-7 form">
+                        <h5>get in touch</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla
+                            semper, neque
+                            ut
+                        </p>
+                        <div class="col-md-12 form-group">
 
-                <input type="text" required name="name" class="form-control" id="name" placeholder="Name" />
-              </div>
-              <div class="col-md-12 form-group">
-                <input type="tel" class="form-control" required name="phone" id="phone-number"
-                  placeholder="Phone Number" />
-              </div>
-              <div class="col-md-12 form-group">
-                <input type="email" class="form-control" required name="email" id="email" placeholder="E-Mail"/>
+                            <input type="text" required name="name" class="form-control" id="name" placeholder="Name"/>
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <input type="tel" class="form-control" required name="phone" id="phone-number"
+                                   placeholder="Phone Number"/>
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <input type="email" class="form-control" required name="email" id="email"
+                                   placeholder="E-Mail"/>
 
-              </div>
-              <div class="col-md-12 form-group">
-                <select class="form-select form-control" aria-label="Default select example" required name="consultation">
-                  <option selected disabled>Service</option>
-                  <option value="marketing">Marketing</option>
-                    <option value="software_development">Software Development</option>
-                    <option value="become_a_partner">Become A Partner</option>
-                </select>
-              </div>
-              <div class="col-md-12 form-group">
-                <textarea class="form-control" required name="message" rows="4" placeholder="Business brief"></textarea>
-              </div>
-              <div class="col-md-12 submit-box">
-                      {% csrf_token %}
-                <button type="submit" class="secondary-btn">SEND NOW</button>
-                <div>
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <select class="form-select form-control" aria-label="Default select example" required
+                                    name="consultation">
+                                <option selected disabled>Service</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="software_development">Software Development</option>
+                                <option value="become_a_partner">Become A Partner</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <textarea class="form-control" required name="message" rows="4"
+                                      placeholder="Business brief"></textarea>
+                        </div>
+                        <div class="col-md-12 submit-box">
+                            {% csrf_token %}
+                            <button type="submit" class="secondary-btn">SEND NOW</button>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 </form>

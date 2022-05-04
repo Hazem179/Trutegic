@@ -13,7 +13,7 @@
                 <li {% if section == "home" %} class="active"{% endif %}><a href="{% url 'main:home' %}">Home</a></li>
                 <li {% if section == "about" %} class="active"{% endif %}><a href="{% url 'main:about' %}">About Us</a>
                 </li>
-                <li {% if section == "service" %} class="active"{% endif %} ><a href="{% url 'main:services' %}">Services</a>
+                <li {% if section == "services" %} class="active"{% endif %} ><a href="{% url 'main:services' %}">Services</a>
                 </li>
                 <li {% if section == "partnership" %} class="active"{% endif %}><a href="{% url 'main:partnership' %}">Partnership</a>
                 </li>
@@ -30,4 +30,3 @@
         </div>
     </div>
 </header>
-
