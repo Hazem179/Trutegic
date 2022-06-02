@@ -79,11 +79,9 @@ def consultation(request):
             form.save()
             return redirect('main:home')
         else:
-            jsonData = json.loads(request.body)
-            adv = jsonData.get('type')
+            adv = request.POST['consultation']
             type_id = AdvisorType.objects.get(adv_type=adv).id
-            times = available_days_filter(type_id)
-            return JsonResponse({'av_dates': times})
+            return redirect('main:calender',advisor_id=type_id)
 
     return render(request, 'main/consultation.html',
                   {'section': 'consultation', 'consultations': CONSULTATIONS,})
@@ -98,3 +96,9 @@ def marketing(request):
 
 def sw_development(request):
     return render(request,'internal/software-development.html',{'section': 'service'})
+
+
+def calender(request,advisor_id):
+    days = available_days_filter(advisor_id)
+    print(days)
+    return render(request,'main/calender.html',{'days':days})

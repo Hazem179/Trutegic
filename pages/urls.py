@@ -14,7 +14,8 @@ urlpatterns = [
     path('consultation/',views.consultation,name = 'consultation'),
     path('services/entrepreneurship/',views.entrepreneurship,name = 'entrepreneurship'),
     path('services/marketing/', views.marketing, name='marketing'),
-    path('services/software_development/', views.sw_development, name='software_development')
+    path('services/software_development/', views.sw_development, name='software_development'),
+    path('calender/<int:advisor_id>/',views.calender,name = 'calender')
 
 
 ]

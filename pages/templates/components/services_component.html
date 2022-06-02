@@ -1,76 +1,67 @@
-   {% load static %}
-    <section id="services" class="services">
-      <div class="container">
+{% load static %}
+<section id="services" class="services">
+    <div class="container">
         <h3 class="h3 text-center">
-          What We Do?
+            What We Do?
         </h3>
         <p class="center-p">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper, neque ut
-          viverra mollis, leo lacus gravida ante, porttitor
+            Trustegic can perform a variety of services based on your needs, our goal is to give you different business
+            solutions to any problem that suits your time and your budget.
         </p>
         <div class="row">
-          <div class="col-md-4 text-center">
-            <img src="{% static 'img/img-entrepreneurship.png' %}" class="img-fluid" loading="lazy">
-          </div>
-          <div class="col-lg-7 col-md-8 col-11 m-auto">
-            <div class="border-title">
-              <h4 class="h4>Partnership</h4>
+            <div class="col-md-4 text-center">
+                <img src="{% static 'img/img-entrepreneurship.png' %}" class="img-fluid" loading="lazy">
             </div>
-            <p class="left-p">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper, neque
-              ut viverra mollis, leo lacus gravida ante, porttitor Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Praesent non vehicula elit. Nulla semper, neque ut viverra mollis, leo lacus gravida ante, porttitor
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper, neque
-              ut viverra mollis, leo lacus gravida ante, porttitor
-            </p>
-            <div class="buttons">
-              <a class="uppercase secondary-btn" href="{% url 'main:consultation' %}">get it now</a>
-              <a class="uppercase blackbrder-btn" href="{% url 'main:entrepreneurship' %}">LEARN MORE</a>
+            <div class="col-lg-7 col-md-8 col-11 m-auto">
+                <div class="border-title">
+                    <h4 class="h4">Partnership</h4>
+                </div>
+                <p class="left-p">
+                    We seek a collaborative relationship with other organizations especially new startups to achieve
+                    your goal
+                </p>
+                <div class="buttons">
+                    <a class="uppercase secondary-btn" href="{% url 'main:consultation' %}">get it now</a>
+                    <a class="uppercase blackbrder-btn" href="{% url 'main:entrepreneurship' %}">LEARN MORE</a>
+                </div>
             </div>
-          </div>
         </div>
         <!-- < -->
         <div class="row">
-          <div class="col-lg-7 col-md-8 col-11 m-auto order-2 order-md-1">
-            <div class="border-title">
-              <h4 class="h4">Software Development</h4>
+            <div class="col-lg-7 col-md-8 col-11 m-auto order-2 order-md-1">
+                <div class="border-title">
+                    <h4 class="h4">Software Development</h4>
+                </div>
+                <p class="left-p">
+                    In Trustegic we will help you to choose and build suitable software for your business
+                </p>
+                <div class="buttons">
+                    <a class="uppercase secondary-btn" href="{% url 'main:consultation' %}">get it now</a>
+                    <a class="uppercase blackbrder-btn" href="{% url 'main:software_development' %}">LEARN MORE</a>
+                </div>
             </div>
-            <p class="left-p">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper, neque
-              ut viverra mollis, leo lacus gravida ante, porttitor Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Praesent non vehicula elit. Nulla semper, neque ut viverra mollis, leo lacus gravida ante, porttitor
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper, neque
-              ut viverra mollis, leo lacus gravida ante, porttitor
-            </p>
-            <div class="buttons">
-              <a class="uppercase secondary-btn" href="{% url 'main:consultation' %}">get it now</a>
-              <a class="uppercase blackbrder-btn" href="{% url 'main:software_development' %}">LEARN MORE</a>
+            <div class="col-md-4 text-center order-1 order-md-2">
+                <img src="{% static 'img/img-development.png' %}" class="img-fluid" loading="lazy">
             </div>
-          </div>
-          <div class="col-md-4 text-center order-1 order-md-2">
-            <img src="{% static 'img/img-development.png' %}" class="img-fluid" loading="lazy">
-          </div>
         </div>
         <div class="row">
-          <div class="col-md-4 text-center">
-            <img src="{% static 'img/img-digital-marketing.png' %}" class="img-fluid" loading="lazy">
-          </div>
-          <div class="col-lg-7 col-md-8 col-11 m-auto">
-            <div class="border-title">
-              <h4 class="h4">DIGITAL MARKETING</h4>
+            <div class="col-md-4 text-center">
+                <img src="{% static 'img/img-digital-marketing.png' %}" class="img-fluid" loading="lazy">
             </div>
-            <p class="left-p">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper, neque
-              ut viverra mollis, leo lacus gravida ante, porttitor Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Praesent non vehicula elit. Nulla semper, neque ut viverra mollis, leo lacus gravida ante, porttitor
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper, neque
-              ut viverra mollis, leo lacus gravida ante, porttitor
-            </p>
-            <div class="buttons">
-              <a class="uppercase secondary-btn" href="{% url 'main:consultation' %}">get it now</a>
-              <a class="uppercase blackbrder-btn" href="{% url 'main:software_development' %}">LEARN MORE</a>
+            <div class="col-lg-7 col-md-8 col-11 m-auto">
+                <div class="border-title">
+                    <h4 class="h4">DIGITAL MARKETING</h4>
+                </div>
+                <p class="left-p">
+                    Trustegic is thrilled to take responsibility for your digital presence , including your social
+                    media, your websites, and applications
+                </p>
+                <div class="buttons">
+                    <a class="uppercase secondary-btn" href="{% url 'main:consultation' %}">get it now</a>
+                    <a class="uppercase blackbrder-btn" href="{% url 'main:software_development' %}">LEARN MORE</a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </div>
+    </div>
+</section>

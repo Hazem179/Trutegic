@@ -210,9 +210,9 @@
                                 {#                                    <select class="col-5 form-select form-control"></select>#}
                                 {#                                </div>#}
                                 <div class="col-md-12 form-group">
-                                    <input type="" class="form-control date" required name="date" id="date"
-                                           placeholder="MM/DD/YYYY" data-bs-toggle="modal"
-                                           data-bs-target="#exampleModal"/>
+{#                                    <input type="" class="form-control date" required name="date" id="date"#}
+{#                                           placeholder="MM/DD/YYYY" data-bs-toggle="modal"#}
+{#                                           data-bs-target="#exampleModal"/>#}
                                 </div>
                                 <div class="col-md-12 form-group">
                                     <textarea class="form-control" required name="message" rows="4"
@@ -231,139 +231,138 @@
             </div>
         </section>
 
+{#    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">#}
+{#            <div class="modal-dialog modal-dialog-centered">#}
+{#                <div class="modal-content">#}
+{#                    <div class="modal-header">#}
+{#                        <a><i class="fal fa-arrow-left"></i></a>#}
+{#                        <h4 class="modal-title" id="exampleModalLabel">may</h4>#}
+{#                        <a><i class="fal fa-arrow-right"></i></a>#}
+{#                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->#}
+{#                    </div>#}
+{#                    <div class="modal-body container-fluid">#}
+{#                        <div>#}
+{#                            <div>#}
+{#                                <div class="list-group" id="list-tab" role="tablist">#}
+{#                                    <a class="list-group-item list-group-item-action active" id="list-sat-list"#}
+{#                                       data-bs-toggle="list" href="#list-sat" role="tab" aria-controls="list-sat">#}
+{#                                        <h6>sat</h6>#}
+{#                                        <p>04/30</p>#}
+{#                                    </a>#}
+{##}
+{#                                    <a class="list-group-item list-group-item-action" id="list-sun-list"#}
+{#                                       data-bs-toggle="list" href="#list-sun" role="tab" aria-controls="list-sun">#}
+{#                                        <h6>sun</h6>#}
+{#                                        <p>05/01</p>#}
+{#                                    </a>#}
+{##}
+{#                                    <a class="list-group-item list-group-item-action" id="list-mon-list"#}
+{#                                       data-bs-toggle="list" href="#list-mon" role="tab" aria-controls="list-mon">#}
+{#                                        <h6>mon</h6>#}
+{#                                        <p>05/02</p>#}
+{#                                    </a>#}
+{##}
+{#                                    <a class="list-group-item list-group-item-action" id="list-tue-list"#}
+{#                                       data-bs-toggle="list" href="#list-tue" role="tab" aria-controls="list-tue">#}
+{#                                        <h6>tue</h6>#}
+{#                                        <p>05/03</p>#}
+{#                                    </a>#}
+{##}
+{#                                    <a class="list-group-item list-group-item-action" id="list-wed-list"#}
+{#                                       data-bs-toggle="list" href="#list-wed" role="tab" aria-controls="list-wed">#}
+{#                                        <h6>wed</h6>#}
+{#                                        <p>05/04</p>#}
+{#                                    </a>#}
+{##}
+{#                                    <a class="list-group-item list-group-item-action" id="list-thu-list"#}
+{#                                       data-bs-toggle="list" href="#list-thu" role="tab" aria-controls="list-thu">#}
+{#                                        <h6>thu</h6>#}
+{#                                        <p>05/05</p>#}
+{#                                    </a>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div>#}
+{#                                <div class="tab-content" id="nav-tabContent">#}
+{#                                    <div class="tab-pane fade show active" id="list-sat" role="tabpanel"#}
+{#                                         aria-labelledby="list-sat-list">#}
+{#                                        <div class="time">#}
+{#                                            <p>#}
+{#                                                10:00pm#}
+{#                                            </p>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{##}
+{#                                    <div class="tab-pane fade" id="list-sun" role="tabpanel"#}
+{#                                         aria-labelledby="list-sun-list">#}
+{#                                        <div class="time">#}
+{#                                            <p>#}
+{#                                                10:00pm#}
+{#                                            </p>#}
+{#                                        </div>#}
+{#                                        <div class="time">#}
+{#                                            <p>#}
+{#                                                10:30pm#}
+{#                                            </p>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{##}
+{#                                    <div class="tab-pane fade" id="list-mon" role="tabpanel"#}
+{#                                         aria-labelledby="list-mon-list">#}
+{#                                        <div class="time">#}
+{#                                            <p>#}
+{#                                                10:30pm#}
+{#                                            </p>#}
+{#                                        </div>#}
+{#                                        <div class="time">#}
+{#                                            <p>#}
+{#                                                11:00pm#}
+{#                                            </p>#}
+{#                                        </div>#}
+{##}
+{#                                    </div>#}
+{##}
+{#                                    <div class="tab-pane fade" id="list-tue" role="tabpanel"#}
+{#                                         aria-labelledby="list-tue-list">#}
+{#                                        <div class="time">#}
+{#                                            <p>#}
+{#                                                9:30pm#}
+{#                                            </p>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{##}
+{#                                    <div class="tab-pane fade" id="list-wed" role="tabpanel"#}
+{#                                         aria-labelledby="list-wed-list">#}
+{#                                        <div class="time">#}
+{#                                            <p>#}
+{#                                                8:30pm#}
+{#                                            </p>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{##}
+{#                                    <div class="tab-pane fade" id="list-thu" role="tabpanel"#}
+{#                                         aria-labelledby="list-thu-list">#}
+{#                                        <div class="time">#}
+{#                                            <p>#}
+{#                                                10:00pm#}
+{#                                            </p>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{##}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="modal-footer">#}
+{#                        <a type="button" class="blackbrder-btn">Submit</a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <a><i class="fal fa-arrow-left"></i></a>
-                        <h4 class="modal-title" id="exampleModalLabel">may</h4>
-                        <a><i class="fal fa-arrow-right"></i></a>
-                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-                    </div>
-                    <div class="modal-body container-fluid">
-                        <div>
-                            <div>
-                                <div class="list-group" id="list-tab" role="tablist">
-                                    <a class="list-group-item list-group-item-action active" id="list-sat-list"
-                                       data-bs-toggle="list" href="#list-sat" role="tab" aria-controls="list-sat">
-                                        <h6>sat</h6>
-                                        <p>04/30</p>
-                                    </a>
-
-                                    <a class="list-group-item list-group-item-action" id="list-sun-list"
-                                       data-bs-toggle="list" href="#list-sun" role="tab" aria-controls="list-sun">
-                                        <h6>sun</h6>
-                                        <p>05/01</p>
-                                    </a>
-
-                                    <a class="list-group-item list-group-item-action" id="list-mon-list"
-                                       data-bs-toggle="list" href="#list-mon" role="tab" aria-controls="list-mon">
-                                        <h6>mon</h6>
-                                        <p>05/02</p>
-                                    </a>
-
-                                    <a class="list-group-item list-group-item-action" id="list-tue-list"
-                                       data-bs-toggle="list" href="#list-tue" role="tab" aria-controls="list-tue">
-                                        <h6>tue</h6>
-                                        <p>05/03</p>
-                                    </a>
-
-                                    <a class="list-group-item list-group-item-action" id="list-wed-list"
-                                       data-bs-toggle="list" href="#list-wed" role="tab" aria-controls="list-wed">
-                                        <h6>wed</h6>
-                                        <p>05/04</p>
-                                    </a>
-
-                                    <a class="list-group-item list-group-item-action" id="list-thu-list"
-                                       data-bs-toggle="list" href="#list-thu" role="tab" aria-controls="list-thu">
-                                        <h6>thu</h6>
-                                        <p>05/05</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="list-sat" role="tabpanel"
-                                         aria-labelledby="list-sat-list">
-                                        <div class="time">
-                                            <p>
-                                                10:00pm
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="tab-pane fade" id="list-sun" role="tabpanel"
-                                         aria-labelledby="list-sun-list">
-                                        <div class="time">
-                                            <p>
-                                                10:00pm
-                                            </p>
-                                        </div>
-                                        <div class="time">
-                                            <p>
-                                                10:30pm
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="tab-pane fade" id="list-mon" role="tabpanel"
-                                         aria-labelledby="list-mon-list">
-                                        <div class="time">
-                                            <p>
-                                                10:30pm
-                                            </p>
-                                        </div>
-                                        <div class="time">
-                                            <p>
-                                                11:00pm
-                                            </p>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="tab-pane fade" id="list-tue" role="tabpanel"
-                                         aria-labelledby="list-tue-list">
-                                        <div class="time">
-                                            <p>
-                                                9:30pm
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="tab-pane fade" id="list-wed" role="tabpanel"
-                                         aria-labelledby="list-wed-list">
-                                        <div class="time">
-                                            <p>
-                                                8:30pm
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="tab-pane fade" id="list-thu" role="tabpanel"
-                                         aria-labelledby="list-thu-list">
-                                        <div class="time">
-                                            <p>
-                                                10:00pm
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <a type="button" class="blackbrder-btn">Submit</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
     </main>
     <script>
-
         document.getElementById('cons').addEventListener('change', function () {
             const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
             fetch('{% url 'main:consultation' %}', {
@@ -377,36 +376,10 @@
                     'type': this.value,
 
                 }),
-            }).then(response => response.json())
-                .then(result => {
-                    let day = document.querySelector("#day")
-                    let dates = result.av_dates
-                    day.innerHTML = ""
-                    showOptions(day, dates)
-
-                })
-
+            })
+             console.log(this.value)
         });
 
-        function showOptions(el, values) {
-            let condition = Object.keys(values).length
-            if (condition > 0) {
-                for (let value in values) {
-                    let optionEl = document.createElement('option')
-                    optionEl.value = value;
-                    optionEl.innerText = `${value} ${values[value]}`
-                    el.append(optionEl)
-                }
-            } else {
-                el.innerHTML = ""
-            }
-        }
-
-        day.addEventListener('change', postSelection)
-
-        function postSelection(e) {
-            console.log(e.target.value)
-        }
 
     </script>
 
