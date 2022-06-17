@@ -3,15 +3,16 @@
 
 
 {% block content %}
-<section id="hero" class="hero-services" style="background-image: linear-gradient(to bottom, #000000C4 0%, #0000000D 100%), url('{% static 'img/bg-services.svg' %}');">
+    <section id="hero" class="hero-services"
+             style="background-image: linear-gradient(to bottom, #000000C4 0%, #0000000D 100%), url('{% static 'img/bg-services.svg' %}');">
         <div class="container d-flex align-items-center flex-column">
             <div class="heading">
                 <h1>
                     We <span>design</span> for your business
                 </h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper,
-                    neque ut viverra mollis, leo lacus gravida ante, porttitor lobortis nulla nulla volutpat neque.
+                    Trustegic provide high quality, effective and efficient services. Our team are committed to provide
+                    these services responsively.
                 </p>
                 <div class="buttons">
                     <a class="uppercase primary-btn" href="{% url 'main:consultation' %}">freE CONSULTATION</a>
@@ -22,19 +23,15 @@
     </section>
 
     <main>
-{% include 'components/clients_component.html' %}
+        {% include 'components/clients_component.html' %}
 
-{% include 'components/services_component.html' %}
+        {% include 'components/services_component.html' %}
         <section class="consultation">
             <div class="consultation-text">
                 <h1>
                     Struggling ? Get A Free Consultation Now
                 </h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit. Nulla semper,
-                    neque ut
-                    viverra mollis, leo lacus gravida ante, porttitor
-                </p>
+
                 <div class="buttons">
                     <a class="uppercase primary-btn" href="{% url 'main:consultation' %}">GET IT NOW</a>
                     <a class="uppercase whitebrder-btn" href="{% url 'main:contact' %}">LEarn more</a>

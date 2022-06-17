@@ -49,11 +49,11 @@ def services(request):
     return render(request, 'main/services.html', {'section': 'services'})
 
 
-def team(request):
-    team = Team.objects.all().order_by('id')
-    print(team)
-    return render(request, 'main/team.html', {'section': 'team', 'team': team})
-
+# def team(request):
+#     team = Team.objects.all().order_by('id')
+#     print(team)
+#     return render(request, 'main/team.html', {'section': 'team', 'team': team})
+#
 
 # def consultation(request):
 #     av_times = AvailableTimes.objects.filter(state='available')

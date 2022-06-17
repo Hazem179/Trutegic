@@ -2,47 +2,142 @@
 {% load static %}
 
 {% block content %}
-
     <main class="page">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'main:home' %}"><img src="{% static 'img/house.png' %}"></a>
-                </li>
-                <li class="breadcrumb-item"><a href="{% url 'main:services' %}">Services</a></li>
-                <li class="breadcrumb-item active" aria-current="page">digital marketing</li>
-            </ol>
-        </nav>
-        <div class="hero">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-7 col-md-8">
-                        <div class="heading-left">
-                            <h1 class="capital">
-                                <span>digital marketing!</span>
-                            </h1>
-                            <p class="left-p">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non vehicula elit.
-                                Nulla semper, neque
-                                ut viverra mollis, leo lacus gravida ante, porttitor lobortis nulla nulla volutpat
-                                neque. </p>
-                            <div class="buttons">
-                                <a class="uppercase secondary-btn" href="{% url 'main:consultation' %}">get it now</a>
-                            </div>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'main:home' %}"><img src="{% static 'img/house.png' %}"></a>
+            </li>
+            <li class="breadcrumb-item"><a href="{% url 'main:services' %}">Services</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Marketing services</li>
+        </ol>
+    </nav>
+    <div class="hero">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-8">
+                    <div class="heading-left">
+                        <h1 class="capital">
+                            <span>Marketing services</span>
+                        </h1>
+                        <p class="left-p">
+                           the promotion of brands to connect with potential customers , trustegic is thrilled to take responsibility for your marketing process. </p>
+                        <div class="buttons">
+                            <a class="uppercase secondary-btn" href="{% url 'main:consultation' %}">get it now</a>
                         </div>
                     </div>
-                    <div class="col-md-4 text-md-right">
-                        <img src="{% static 'img/img-digital-marketing.png' %}" class="img-fluid">
-                    </div>
+                </div>
+                <div class="col-md-4 text-md-right">
+                    <img src="{% static 'img/img-digital-marketing.png' %}" class="img-fluid">
                 </div>
             </div>
         </div>
+    </div>
 
+    <!-- Counts  -->
+
+
+    <main>
         {% include 'components/clients_component.html' %}
 
-        {% include 'components/general_services.html' %}
 
-        {% include 'components/talk.html' %}
+        <section class="steps">
+            <div class="container">
+                <div class="title">
+                    <h3 class="h3 capital">
+                        Our Marketing Services
+                    </h3>
+                </div>
+
+                <!-- STEP 1 -->
+                <div class="row align-items-center mb-3 justify-content-between">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="step">
+                            <span class="lg-number">1</span>
+                            <div class="d-flex flex-column">
+                                <div class="border-title">
+                                    <h4 class="h4">Digital Services</h4>
+                                </div>
+                                <ul>
+                                    <li>Marketing Audit</li>
+                                    <li>Marketing Plans</li>
+                                    <li>Key Messages</li>
+                                    <li>Positioning</li>
+                                    <li>Marketing Research</li>
+                                    <li>Action Planning</li>
+                                    <li>SWOT Analysis</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-4 text-center">
+                        <img class="img-fluid" src="{% static 'img/Digital.png' %}">
+                    </div>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="row align-items-center justify-content-between mb-3">
+                    <div class="col-lg-5 col-md-4 text-center order-md-1 order-2">
+                        <img class="img-fluid" src="{% static 'img/Strategic.png' %}">
+                    </div>
+                    <div class="col-lg-6 col-md-8 order-md-2 order-1">
+                        <div class="step">
+                            <span class="lg-number">2</span>
+                            <div class="d-flex flex-column">
+                                <div class="border-title">
+                                    <h4 class="h4">Strategic Services</h4>
+                                </div>
+                                <ul>
+                                    <li>Search Engine Optimization (SEO)</li>
+                                    <li>Search Engine Marketing (SEM)</li>
+                                    <li>Website Strategy</li>
+                                    <li>Social Media Management</li>
+                                    <li>Content Generation And Optimization</li>
+                                    <li>Integrated Online Marketing Strategies</li>
+                                    <li>Social Media Ads Campaigns</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="step">
+                            <span class="lg-number">3</span>
+                            <div class="d-flex flex-column">
+                                <div class="border-title">
+                                    <h4 class="h4">Creative Services</h4>
+                                </div>
+                                <ul>
+                                    <li>Branding</li>
+                                    <li>Logo Design</li>
+                                    <li>Web Design</li>
+                                    <li>Social Media Design</li>
+                                    <li>Advertising</li>
+                                    <li>Promotional Design</li>
+                                    <li>Video Design</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-4 text-center">
+                        <img class="img-fluid" src="{% static 'img/Creative.png' %}">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="consultation">
+            <div class="consultation-text">
+                <h1>
+                    How Much does It Cost
+                </h1>
+                <div class="buttons">
+                    <a class="uppercase primary-btn" href="{% url 'main:consultation' %}">call us</a>
+                </div>
+            </div>
+        </section>
     </main>
-
-
 {% endblock %}
