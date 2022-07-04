@@ -642,7 +642,6 @@ header.invert .mobile-nav-toggle i.fa-times {
 .border-title {
   border-bottom: 12px solid #dededeb3;
   width: fit-content;
-  margin-bottom: 1rem;
   color: #141414;
 }
 
@@ -1180,7 +1179,7 @@ footer .copyright {
   padding: 30px;
 }
 .border-title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .report img {
